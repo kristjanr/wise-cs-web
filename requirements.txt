@@ -7,3 +7,4 @@ peewee
 Werkzeug
 openai
 tiktoken
+numpy
