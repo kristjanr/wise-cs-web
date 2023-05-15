@@ -1,0 +1,2063 @@
+[
+  {
+    "path": "scraped-data/sections/01-sending-money",
+    "order": 1,
+    "link": "https://wise.com/help/topics/5bVKT0uQdBrDp6T62keyfz/sending-money",
+    "heading": "Sending money",
+    "title": "Setting up, paying for, editing, and cancelling transfers.",
+    "subsections": [
+      {
+        "order": 1,
+        "heading": "Sending money basics",
+        "articles": [
+          {
+            "title": "How do I send money with Wise?",
+            "link": "/help/articles/2977959/how-do-i-send-money-with-wise",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/01-how-do-i-send-money-with-wise"
+          },
+          {
+            "title": "How long does a transfer take?",
+            "link": "/help/articles/2524078/how-long-does-a-transfer-take",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/02-how-long-does-a-transfer-take"
+          },
+          {
+            "title": "Can I send exact amounts?",
+            "link": "/help/articles/2448314/can-i-send-exact-amounts",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/03-can-i-send-exact-amounts"
+          },
+          {
+            "title": "How do you notify me about a transfer?",
+            "link": "/help/articles/2553293/how-do-you-notify-me-about-a-transfer",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/04-how-do-you-notify-me-about-a-transfer"
+          },
+          {
+            "title": "How do I download a transfer receipt?",
+            "link": "/help/articles/2977946/how-do-i-download-a-transfer-receipt",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/05-how-do-i-download-a-transfer-receipt"
+          },
+          {
+            "title": "Do I need to pay any tax on transfers?",
+            "link": "/help/articles/2565007/do-i-need-to-pay-any-tax-on-transfers",
+            "order": 6,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/06-do-i-need-to-pay-any-tax-on-transfers"
+          },
+          {
+            "title": "How can I repeat a transfer?",
+            "link": "/help/articles/2491525/how-can-i-repeat-a-transfer",
+            "order": 7,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/07-how-can-i-repeat-a-transfer"
+          },
+          {
+            "title": "Can I send from a joint bank account?",
+            "link": "/help/articles/2977993/can-i-send-from-a-joint-bank-account",
+            "order": 8,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/08-can-i-send-from-a-joint-bank-account"
+          },
+          {
+            "title": "Can I send from someone else's bank account?",
+            "link": "/help/articles/2977990/can-i-send-from-someone-elses-bank-account",
+            "order": 9,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics/articles/09-can-i-send-from-someone-else-s-bank-account"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/01-sending-money-basics"
+      },
+      {
+        "order": 2,
+        "heading": "Where is my money?",
+        "articles": [
+          {
+            "title": "How can I check the status of my transfer?",
+            "link": "/help/articles/2452305/how-can-i-check-the-status-of-my-transfer",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money/articles/01-how-can-i-check-the-status-of-my-transfer"
+          },
+          {
+            "title": "When will my money arrive?",
+            "link": "/help/articles/2941900/when-will-my-money-arrive",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money/articles/02-when-will-my-money-arrive"
+          },
+          {
+            "title": "Why does it say my transfer's complete when the money hasn't arrived yet?",
+            "link": "/help/articles/2977950/why-does-it-say-my-transfers-complete-when-the-money-hasnt-arrived-yet",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money/articles/03-why-does-it-say-my-transfer-s-complete-when-the-money-hasn-t-arrived-yet"
+          },
+          {
+            "title": "Why is my transfer taking so long?",
+            "link": "/help/articles/2977951/why-is-my-transfer-taking-so-long",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money/articles/04-why-is-my-transfer-taking-so-long"
+          },
+          {
+            "title": "What is a proof of payment?",
+            "link": "/help/articles/2932689/what-is-a-proof-of-payment",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money/articles/05-what-is-a-proof-of-payment"
+          },
+          {
+            "title": "What's a banking partner reference number?",
+            "link": "/help/articles/2977938/whats-a-banking-partner-reference-number",
+            "order": 6,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money/articles/06-what-s-a-banking-partner-reference-number"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/02-where-is-my-money"
+      },
+      {
+        "order": 3,
+        "heading": "Mistakes and editing your transfer",
+        "articles": [
+          {
+            "title": "Why was I charged extra?",
+            "link": "/help/articles/2977994/why-was-i-charged-extra",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/03-mistakes-and-editing-your-transfer/articles/01-why-was-i-charged-extra"
+          },
+          {
+            "title": "I entered the wrong reference",
+            "link": "/help/articles/2978023/i-entered-the-wrong-reference",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/03-mistakes-and-editing-your-transfer/articles/02-i-entered-the-wrong-reference"
+          },
+          {
+            "title": "I sent money to the wrong person",
+            "link": "/help/articles/2978032/i-sent-money-to-the-wrong-person",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/03-mistakes-and-editing-your-transfer/articles/03-i-sent-money-to-the-wrong-person"
+          },
+          {
+            "title": "I sent the wrong amount",
+            "link": "/help/articles/2978031/i-sent-the-wrong-amount",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/03-mistakes-and-editing-your-transfer/articles/04-i-sent-the-wrong-amount"
+          },
+          {
+            "title": "I forgot the reference",
+            "link": "/help/articles/2932690/i-forgot-the-reference",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/03-mistakes-and-editing-your-transfer/articles/05-i-forgot-the-reference"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/03-mistakes-and-editing-your-transfer"
+      },
+      {
+        "order": 4,
+        "heading": "Cancellations and refunds",
+        "articles": [
+          {
+            "title": "I want to cancel a transfer that's completed",
+            "link": "/help/articles/2565014/i-want-to-cancel-a-transfer-thats-completed",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/01-i-want-to-cancel-a-transfer-that-s-completed"
+          },
+          {
+            "title": "I want to cancel a transfer I haven't paid for",
+            "link": "/help/articles/2971625/i-want-to-cancel-a-transfer-i-havent-paid-for",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/02-i-want-to-cancel-a-transfer-i-haven-t-paid-for"
+          },
+          {
+            "title": "Why was my transfer cancelled?",
+            "link": "/help/articles/2971425/why-was-my-transfer-cancelled",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/03-why-was-my-transfer-cancelled"
+          },
+          {
+            "title": "How long do refunds take?",
+            "link": "/help/articles/2971476/how-long-do-refunds-take",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/04-how-long-do-refunds-take"
+          },
+          {
+            "title": "Is there a refund fee?",
+            "link": "/help/articles/2971422/is-there-a-refund-fee",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/05-is-there-a-refund-fee"
+          },
+          {
+            "title": "Where will you refund my money?",
+            "link": "/help/articles/2932372/where-will-you-refund-my-money",
+            "order": 6,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/06-where-will-you-refund-my-money"
+          },
+          {
+            "title": "I want a refund to my Wise balance",
+            "link": "/help/articles/2977996/i-want-a-refund-to-my-wise-balance",
+            "order": 7,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds/articles/07-i-want-a-refund-to-my-wise-balance"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/04-cancellations-and-refunds"
+      },
+      {
+        "order": 5,
+        "heading": "We support these countries and currencies",
+        "articles": [
+          {
+            "title": "What currencies can I send to and from?",
+            "link": "/help/articles/2571907/what-currencies-can-i-send-to-and-from",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/05-we-support-these-countries-and-currencies/articles/01-what-currencies-can-i-send-to-and-from"
+          },
+          {
+            "title": "What countries can I send to?",
+            "link": "/help/articles/2571942/what-countries-can-i-send-to",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/05-we-support-these-countries-and-currencies/articles/02-what-countries-can-i-send-to"
+          },
+          {
+            "title": "Sending EUR to countries outside of Europe",
+            "link": "/help/articles/2968916/sending-eur-to-countries-outside-of-europe",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/05-we-support-these-countries-and-currencies/articles/03-sending-eur-to-countries-outside-of-europe"
+          },
+          {
+            "title": "Sending GBP to countries outside of the UK",
+            "link": "/help/articles/2977936/sending-gbp-to-countries-outside-of-the-uk",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/05-we-support-these-countries-and-currencies/articles/04-sending-gbp-to-countries-outside-of-the-uk"
+          },
+          {
+            "title": "Sending USD to countries outside the US",
+            "link": "/help/articles/2946451/sending-usd-to-countries-outside-the-us",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/05-we-support-these-countries-and-currencies/articles/05-sending-usd-to-countries-outside-the-us"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/05-we-support-these-countries-and-currencies"
+      },
+      {
+        "order": 6,
+        "heading": "Ways to pay",
+        "articles": [
+          {
+            "title": "How to pay by bank transfer",
+            "link": "/help/articles/2559761/how-to-pay-by-bank-transfer",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/01-how-to-pay-by-bank-transfer"
+          },
+          {
+            "title": "Problems paying by bank transfer",
+            "link": "/help/articles/2968910/problems-paying-by-bank-transfer",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/02-problems-paying-by-bank-transfer"
+          },
+          {
+            "title": "How to pay by card",
+            "link": "/help/articles/2556723/how-to-pay-by-card",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/03-how-to-pay-by-card"
+          },
+          {
+            "title": "Problems paying by card",
+            "link": "/help/articles/2452280/problems-paying-by-card",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/04-problems-paying-by-card"
+          },
+          {
+            "title": "Paying by SWIFT",
+            "link": "/help/articles/2553074/paying-by-swift",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/05-paying-by-swift"
+          },
+          {
+            "title": "Paying for a transfer with Apple or Google Pay",
+            "link": "/help/articles/2973523/paying-for-a-transfer-with-apple-or-google-pay",
+            "order": 6,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/06-paying-for-a-transfer-with-apple-or-google-pay"
+          },
+          {
+            "title": "Types of transfers for sending GBP",
+            "link": "/help/articles/2954854/types-of-transfers-for-sending-gbp",
+            "order": 7,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/07-types-of-transfers-for-sending-gbp"
+          },
+          {
+            "title": "Paying by Open Banking",
+            "link": "/help/articles/2977964/paying-by-open-banking",
+            "order": 8,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/08-paying-by-open-banking"
+          },
+          {
+            "title": "Types of transfers for sending EUR",
+            "link": "/help/articles/2968267/types-of-transfers-for-sending-eur",
+            "order": 9,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/09-types-of-transfers-for-sending-eur"
+          },
+          {
+            "title": "Types of transfers for sending European currencies",
+            "link": "/help/articles/2968266/types-of-transfers-for-sending-european-currencies",
+            "order": 10,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/10-types-of-transfers-for-sending-european-currencies"
+          },
+          {
+            "title": "What are SEPA transfers?",
+            "link": "/help/articles/2956754/what-are-sepa-transfers",
+            "order": 11,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/11-what-are-sepa-transfers"
+          },
+          {
+            "title": "Paying with iDeal",
+            "link": "/help/articles/2550846/paying-with-ideal",
+            "order": 12,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/12-paying-with-ideal"
+          },
+          {
+            "title": "Paying with Trustly",
+            "link": "/help/articles/2550892/paying-with-trustly",
+            "order": 13,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/13-paying-with-trustly"
+          },
+          {
+            "title": "Paying with SOFORT",
+            "link": "/help/articles/2550843/paying-with-sofort",
+            "order": 14,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/14-paying-with-sofort"
+          },
+          {
+            "title": "Paying with your connected bank account (ACH) in the US",
+            "link": "/help/articles/2932710/paying-with-your-connected-bank-account-ach-in-the-us",
+            "order": 15,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/15-paying-with-your-connected-bank-account-ach-in-the-us"
+          },
+          {
+            "title": "How to use microdeposits",
+            "link": "/help/articles/2743360/how-to-use-microdeposits",
+            "order": 16,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/16-how-to-use-microdeposits"
+          },
+          {
+            "title": "Can I pay by ACH electronic payment?",
+            "link": "/help/articles/2789180/can-i-pay-by-ach-electronic-payment",
+            "order": 17,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/17-can-i-pay-by-ach-electronic-payment"
+          },
+          {
+            "title": "Paying by direct debit in Canada",
+            "link": "/help/articles/2955293/paying-by-direct-debit-in-canada",
+            "order": 18,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/18-paying-by-direct-debit-in-canada"
+          },
+          {
+            "title": "Paying with online bill pay",
+            "link": "/help/articles/2877011/paying-with-online-bill-pay",
+            "order": 19,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/19-paying-with-online-bill-pay"
+          },
+          {
+            "title": "Paying by POLi",
+            "link": "/help/articles/2742504/paying-by-poli",
+            "order": 20,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/20-paying-by-poli"
+          },
+          {
+            "title": "Educational transfers from BRL",
+            "link": "/help/articles/2978056/educational-transfers-from-brl",
+            "order": 21,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/21-educational-transfers-from-brl"
+          },
+          {
+            "title": "Paying with PayPal",
+            "link": "/help/articles/AUxDcgEH1XURzKJjfIrfN/paying-with-paypal",
+            "order": 22,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay/articles/22-paying-with-paypal"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/06-ways-to-pay"
+      },
+      {
+        "order": 7,
+        "heading": "Verifying your transfer",
+        "articles": [
+          {
+            "title": "How does verification affect my transfer's speed?",
+            "link": "/help/articles/2977962/how-does-verification-affect-my-transfers-speed",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/07-verifying-your-transfer/articles/01-how-does-verification-affect-my-transfer-s-speed"
+          },
+          {
+            "title": "How do you verify my joint account?",
+            "link": "/help/articles/2549410/how-do-you-verify-my-joint-account",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/07-verifying-your-transfer/articles/02-how-do-you-verify-my-joint-account"
+          },
+          {
+            "title": "How long will additional checks on my transfer take?",
+            "link": "/help/articles/2977963/how-long-will-additional-checks-on-my-transfer-take",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/07-verifying-your-transfer/articles/03-how-long-will-additional-checks-on-my-transfer-take"
+          },
+          {
+            "title": "Can I get my documents approved before I send?",
+            "link": "/help/articles/2978016/can-i-get-my-documents-approved-before-i-send",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/07-verifying-your-transfer/articles/04-can-i-get-my-documents-approved-before-i-send"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/07-verifying-your-transfer"
+      },
+      {
+        "order": 8,
+        "heading": "Sending money from your Wise account",
+        "articles": [
+          {
+            "title": "What are scheduled transfers?",
+            "link": "/help/articles/2978063/what-are-scheduled-transfers",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/08-sending-money-from-your-wise-account/articles/01-what-are-scheduled-transfers"
+          },
+          {
+            "title": "How can I send money from a balance?",
+            "link": "/help/articles/2596987/how-can-i-send-money-from-a-balance",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/08-sending-money-from-your-wise-account/articles/02-how-can-i-send-money-from-a-balance"
+          },
+          {
+            "title": "How much does it cost to send money from a balance?",
+            "link": "/help/articles/2949818/how-much-does-it-cost-to-send-money-from-a-balance",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/08-sending-money-from-your-wise-account/articles/03-how-much-does-it-cost-to-send-money-from-a-balance"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/08-sending-money-from-your-wise-account"
+      },
+      {
+        "order": 9,
+        "heading": "Sending large transfers",
+        "articles": [
+          {
+            "title": "Is it safe to send large amounts with Wise?",
+            "link": "/help/articles/2977943/is-it-safe-to-send-large-amounts-with-wise",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/01-is-it-safe-to-send-large-amounts-with-wise"
+          },
+          {
+            "title": "What documents might I need for a large transfer?",
+            "link": "/help/articles/2976418/what-documents-might-i-need-for-a-large-transfer",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/02-what-documents-might-i-need-for-a-large-transfer"
+          },
+          {
+            "title": "Are there limits to how much I can send?",
+            "link": "/help/articles/2526719/are-there-limits-to-how-much-i-can-send",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/03-are-there-limits-to-how-much-i-can-send"
+          },
+          {
+            "title": "What if I want to send more than my bank allows?",
+            "link": "/help/articles/2977944/what-if-i-want-to-send-more-than-my-bank-allows",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/04-what-if-i-want-to-send-more-than-my-bank-allows"
+          },
+          {
+            "title": "Tips for getting started with large transfers",
+            "link": "/help/articles/2961856/tips-for-getting-started-with-large-transfers",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/05-tips-for-getting-started-with-large-transfers"
+          },
+          {
+            "title": "How much does it cost to send large transfers?",
+            "link": "/help/articles/2977942/how-much-does-it-cost-to-send-large-transfers",
+            "order": 6,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/06-how-much-does-it-cost-to-send-large-transfers"
+          },
+          {
+            "title": "Why do I need to prove where my money comes from?",
+            "link": "/help/articles/2978019/why-do-i-need-to-prove-where-my-money-comes-from",
+            "order": 7,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/07-why-do-i-need-to-prove-where-my-money-comes-from"
+          },
+          {
+            "title": "Can I use my bank statement as a source of funds?",
+            "link": "/help/articles/2978014/can-i-use-my-bank-statement-as-a-source-of-funds",
+            "order": 8,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/08-can-i-use-my-bank-statement-as-a-source-of-funds"
+          },
+          {
+            "title": "How long does a large transfer take?",
+            "link": "/help/articles/2977945/how-long-does-a-large-transfer-take",
+            "order": 9,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/09-how-long-does-a-large-transfer-take"
+          },
+          {
+            "title": "Can I make an urgent large transfer?",
+            "link": "/help/articles/2978020/can-i-make-an-urgent-large-transfer",
+            "order": 10,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers/articles/10-can-i-make-an-urgent-large-transfer"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/09-sending-large-transfers"
+      },
+      {
+        "order": 10,
+        "heading": "Managing your recipients",
+        "articles": [
+          {
+            "title": "How do I add or delete recipients?",
+            "link": "/help/articles/2491526/how-do-i-add-or-delete-recipients",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients/articles/01-how-do-i-add-or-delete-recipients"
+          },
+          {
+            "title": "How to sync your contacts to find friends on Wise",
+            "link": "/help/articles/2978055/how-to-sync-your-contacts-to-find-friends-on-wise",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients/articles/02-how-to-sync-your-contacts-to-find-friends-on-wise"
+          },
+          {
+            "title": "Can I send money to someone with only their email address?",
+            "link": "/help/articles/2932105/can-i-send-money-to-someone-with-only-their-email-address",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients/articles/03-can-i-send-money-to-someone-with-only-their-email-address"
+          },
+          {
+            "title": "I got my recipient's bank details wrong",
+            "link": "/help/articles/2448406/i-got-my-recipients-bank-details-wrong",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients/articles/04-i-got-my-recipient-s-bank-details-wrong"
+          },
+          {
+            "title": "I spelt my recipient's name wrong",
+            "link": "/help/articles/2932667/i-spelt-my-recipients-name-wrong",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients/articles/05-i-spelt-my-recipient-s-name-wrong"
+          },
+          {
+            "title": "I entered my recipient's email incorrectly",
+            "link": "/help/articles/2978030/i-entered-my-recipients-email-incorrectly",
+            "order": 6,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients/articles/06-i-entered-my-recipient-s-email-incorrectly"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/10-managing-your-recipients"
+      },
+      {
+        "order": 11,
+        "heading": "Rates and fees",
+        "articles": [
+          {
+            "title": "Fees for sending money",
+            "link": "/help/articles/2522717/fees-for-sending-money",
+            "order": 1,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/11-rates-and-fees/articles/01-fees-for-sending-money"
+          },
+          {
+            "title": "What's a guaranteed rate?",
+            "link": "/help/articles/2448203/whats-a-guaranteed-rate",
+            "order": 2,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/11-rates-and-fees/articles/02-what-s-a-guaranteed-rate"
+          },
+          {
+            "title": "What if I miss my guaranteed rate?",
+            "link": "/help/articles/2978017/what-if-i-miss-my-guaranteed-rate",
+            "order": 3,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/11-rates-and-fees/articles/03-what-if-i-miss-my-guaranteed-rate"
+          },
+          {
+            "title": "Can I get rate alerts?",
+            "link": "/help/articles/2487049/can-i-get-rate-alerts",
+            "order": 4,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/11-rates-and-fees/articles/04-can-i-get-rate-alerts"
+          },
+          {
+            "title": "How do live rate transfers work?",
+            "link": "/help/articles/2978018/how-do-live-rate-transfers-work",
+            "order": 5,
+            "folder_path": "scraped-data/sections/01-sending-money/subsections/11-rates-and-fees/articles/05-how-do-live-rate-transfers-work"
+          }
+        ],
+        "folder_path": "scraped-data/sections/01-sending-money/subsections/11-rates-and-fees"
+      }
+    ]
+  },
+  {
+    "path": "scraped-data/sections/02-managing-your-account",
+    "order": 2,
+    "link": "https://wise.com/help/topics/OQDKGx7MTsaujfEjiZmIS/managing-your-account",
+    "heading": "Managing your account",
+    "title": "Setting up your account and getting verified.",
+    "subsections": [
+      {
+        "order": 1,
+        "heading": "Setting up and managing your account",
+        "articles": [
+          {
+            "title": "Tips for getting started with Wise",
+            "link": "/help/articles/2817401/tips-for-getting-started-with-wise",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/01-tips-for-getting-started-with-wise"
+          },
+          {
+            "title": "What do I need to get my business verified?",
+            "link": "/help/articles/2769792/what-do-i-need-to-get-my-business-verified",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/02-what-do-i-need-to-get-my-business-verified"
+          },
+          {
+            "title": "I don't have the documents you asked for",
+            "link": "/help/articles/2977982/i-dont-have-the-documents-you-asked-for",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/03-i-don-t-have-the-documents-you-asked-for"
+          },
+          {
+            "title": "My document wasn't good enough quality",
+            "link": "/help/articles/2977980/my-document-wasnt-good-enough-quality",
+            "order": 4,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/04-my-document-wasn-t-good-enough-quality"
+          },
+          {
+            "title": "My document didn't have enough information on it",
+            "link": "/help/articles/2977979/my-document-didnt-have-enough-information-on-it",
+            "order": 5,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/05-my-document-didn-t-have-enough-information-on-it"
+          },
+          {
+            "title": "Guide to getting verified",
+            "link": "/help/articles/2949782/guide-to-getting-verified",
+            "order": 6,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/06-guide-to-getting-verified"
+          },
+          {
+            "title": "Why do I need to get verified?",
+            "link": "/help/articles/2978001/why-do-i-need-to-get-verified",
+            "order": 7,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/07-why-do-i-need-to-get-verified"
+          },
+          {
+            "title": "How does Wise verify my identity?",
+            "link": "/help/articles/2949801/how-does-wise-verify-my-identity",
+            "order": 8,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/08-how-does-wise-verify-my-identity"
+          },
+          {
+            "title": "Can I have more than one account?",
+            "link": "/help/articles/2932130/can-i-have-more-than-one-account",
+            "order": 9,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/09-can-i-have-more-than-one-account"
+          },
+          {
+            "title": "What happens if I create a duplicate account?",
+            "link": "/help/articles/2g1s7IE9PgAcrPC0ZKeokg/what-happens-if-i-create-a-duplicate-account",
+            "order": 10,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account/articles/10-what-happens-if-i-create-a-duplicate-account"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/01-setting-up-and-managing-your-account"
+      },
+      {
+        "order": 2,
+        "heading": "Account and settings",
+        "articles": [
+          {
+            "title": "I need to change my email address",
+            "link": "/help/articles/2554102/i-need-to-change-my-email-address",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/02-account-and-settings/articles/01-i-need-to-change-my-email-address"
+          },
+          {
+            "title": "I need to edit my personal details",
+            "link": "/help/articles/2932128/i-need-to-edit-my-personal-details",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/02-account-and-settings/articles/02-i-need-to-edit-my-personal-details"
+          },
+          {
+            "title": "I need to change my phone number",
+            "link": "/help/articles/2978044/i-need-to-change-my-phone-number",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/02-account-and-settings/articles/03-i-need-to-change-my-phone-number"
+          },
+          {
+            "title": "How do I manage my notifications?",
+            "link": "/help/articles/2952327/how-do-i-manage-my-notifications",
+            "order": 4,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/02-account-and-settings/articles/04-how-do-i-manage-my-notifications"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/02-account-and-settings"
+      },
+      {
+        "order": 3,
+        "heading": "Logging in",
+        "articles": [
+          {
+            "title": "How do I change my 2-step verification settings?",
+            "link": "/help/articles/2932125/how-do-i-change-my-2-step-verification-settings",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/01-how-do-i-change-my-2-step-verification-settings"
+          },
+          {
+            "title": "Can I sign up with my Facebook, Google, or Apple account?",
+            "link": "/help/articles/2555360/can-i-sign-up-with-my-facebook-google-or-apple-account",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/02-can-i-sign-up-with-my-facebook-google-or-apple-account"
+          },
+          {
+            "title": "I've forgotten my password",
+            "link": "/help/articles/2554205/ive-forgotten-my-password",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/03-i-ve-forgotten-my-password"
+          },
+          {
+            "title": "I didn't receive the 2-step verification code or notification",
+            "link": "/help/articles/2951949/i-didnt-receive-the-2-step-verification-code-or-notification",
+            "order": 4,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/04-i-didn-t-receive-the-2-step-verification-code-or-notification"
+          },
+          {
+            "title": "I\u2019ve changed my phone number and can\u2019t log in",
+            "link": "/help/articles/2960087/ive-changed-my-phone-number-and-cant-log-in",
+            "order": 5,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/05-ive-changed-my-phone-number-and-cant-log-in"
+          },
+          {
+            "title": "I want to disconnect my social account",
+            "link": "/help/articles/2978003/i-want-to-disconnect-my-social-account",
+            "order": 6,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/06-i-want-to-disconnect-my-social-account"
+          },
+          {
+            "title": "How do I set up biometric authentication?",
+            "link": "/help/articles/ZIHqE9ZcUttU2KjhmGtwo/how-do-i-set-up-biometric-authentication",
+            "order": 7,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in/articles/07-how-do-i-set-up-biometric-authentication"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/03-logging-in"
+      },
+      {
+        "order": 4,
+        "heading": "Privacy and security",
+        "articles": [
+          {
+            "title": "What's your privacy policy?",
+            "link": "/help/articles/2932697/whats-your-privacy-policy",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/01-what-s-your-privacy-policy"
+          },
+          {
+            "title": "How long do you store my data for?",
+            "link": "/help/articles/2932638/how-long-do-you-store-my-data-for",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/02-how-long-do-you-store-my-data-for"
+          },
+          {
+            "title": "How is Wise regulated in each country?",
+            "link": "/help/articles/2932693/how-is-wise-regulated-in-each-country",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/03-how-is-wise-regulated-in-each-country"
+          },
+          {
+            "title": "Can I receive money without sharing my bank details?",
+            "link": "/help/articles/2978054/can-i-receive-money-without-sharing-my-bank-details",
+            "order": 4,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/04-can-i-receive-money-without-sharing-my-bank-details"
+          },
+          {
+            "title": "Who is the FCA?",
+            "link": "/help/articles/2932699/who-is-the-fca",
+            "order": 5,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/05-who-is-the-fca"
+          },
+          {
+            "title": "What is Confirmation of Payee (CoP)?",
+            "link": "/help/articles/2978084/what-is-confirmation-of-payee-cop",
+            "order": 6,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/06-what-is-confirmation-of-payee-cop"
+          },
+          {
+            "title": "What do you do with my information?",
+            "link": "/help/articles/2448357/what-do-you-do-with-my-information",
+            "order": 7,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/07-what-do-you-do-with-my-information"
+          },
+          {
+            "title": "How does tax work with my Wise Account?",
+            "link": "/help/articles/2932394/how-does-tax-work-with-my-wise-account",
+            "order": 8,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/08-how-does-tax-work-with-my-wise-account"
+          },
+          {
+            "title": "I need info about a Wise customer. Can I get it?",
+            "link": "/help/articles/2978071/i-need-info-about-a-wise-customer-can-i-get-it",
+            "order": 9,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security/articles/09-i-need-info-about-a-wise-customer-can-i-get-it"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/04-privacy-and-security"
+      },
+      {
+        "order": 5,
+        "heading": "Invites and rewards",
+        "articles": [
+          {
+            "title": "How does the invite program work?",
+            "link": "/help/articles/2487043/how-does-the-invite-program-work",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/01-how-does-the-invite-program-work"
+          },
+          {
+            "title": "How does the card invite program work?",
+            "link": "/help/articles/1RmcuFPun9rpLe9DpBwAls/how-does-the-card-invite-program-work",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/02-how-does-the-card-invite-program-work"
+          },
+          {
+            "title": "How does a fee-free transfer work?",
+            "link": "/help/articles/2566789/how-does-a-fee-free-transfer-work",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/03-how-does-a-fee-free-transfer-work"
+          },
+          {
+            "title": "How does fee credit work?",
+            "link": "/help/articles/2566790/how-does-fee-credit-work",
+            "order": 4,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/04-how-does-fee-credit-work"
+          },
+          {
+            "title": "Why didn't my invite link work?",
+            "link": "/help/articles/2977988/why-didnt-my-invite-link-work",
+            "order": 5,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/05-why-didn-t-my-invite-link-work"
+          },
+          {
+            "title": "How do I make sure my invites count towards my reward?",
+            "link": "/help/articles/2977975/how-do-i-make-sure-my-invites-count-towards-my-reward",
+            "order": 6,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/06-how-do-i-make-sure-my-invites-count-towards-my-reward"
+          },
+          {
+            "title": "How much is my reward?",
+            "link": "/help/articles/2566754/how-much-is-my-reward",
+            "order": 7,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/07-how-much-is-my-reward"
+          },
+          {
+            "title": "How do I get my reward?",
+            "link": "/help/articles/2566728/how-do-i-get-my-reward",
+            "order": 8,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/08-how-do-i-get-my-reward"
+          },
+          {
+            "title": "I didn't get my reward",
+            "link": "/help/articles/2977985/i-didnt-get-my-reward",
+            "order": 9,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/09-i-didn-t-get-my-reward"
+          },
+          {
+            "title": "Wise Referral Terms",
+            "link": "/help/articles/2666686/wise-referral-terms",
+            "order": 10,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/10-wise-referral-terms"
+          },
+          {
+            "title": "What's the Wise affiliate program?",
+            "link": "/help/articles/2978038/whats-the-wise-affiliate-program",
+            "order": 11,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards/articles/11-what-s-the-wise-affiliate-program"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/05-invites-and-rewards"
+      },
+      {
+        "order": 6,
+        "heading": "Fraud and complaints",
+        "articles": [
+          {
+            "title": "How do I make a complaint?",
+            "link": "/help/articles/2235393/how-do-i-make-a-complaint",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/06-fraud-and-complaints/articles/01-how-do-i-make-a-complaint"
+          },
+          {
+            "title": "I may be the victim of fraud or a scam",
+            "link": "/help/articles/2978048/i-may-be-the-victim-of-fraud-or-a-scam",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/06-fraud-and-complaints/articles/02-i-may-be-the-victim-of-fraud-or-a-scam"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/06-fraud-and-complaints"
+      },
+      {
+        "order": 7,
+        "heading": "Closing your account",
+        "articles": [
+          {
+            "title": "My account was deactivated",
+            "link": "/help/articles/2961844/my-account-was-deactivated",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/07-closing-your-account/articles/01-my-account-was-deactivated"
+          },
+          {
+            "title": "How do I close my Wise account?",
+            "link": "/help/articles/2978000/how-do-i-close-my-wise-account",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/07-closing-your-account/articles/02-how-do-i-close-my-wise-account"
+          },
+          {
+            "title": "How do I close my Wise Business account?",
+            "link": "/help/articles/2977973/how-do-i-close-my-wise-business-account",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/07-closing-your-account/articles/03-how-do-i-close-my-wise-business-account"
+          },
+          {
+            "title": "I\u2019ve closed my account, how do I reopen it?",
+            "link": "/help/articles/2961843/ive-closed-my-account-how-do-i-reopen-it",
+            "order": 4,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/07-closing-your-account/articles/04-ive-closed-my-account-how-do-i-reopen-it"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/07-closing-your-account"
+      },
+      {
+        "order": 8,
+        "heading": "Bills and statements",
+        "articles": [
+          {
+            "title": "How do I download a statement?",
+            "link": "/help/articles/2736049/how-do-i-download-a-statement",
+            "order": 1,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/08-bills-and-statements/articles/01-how-do-i-download-a-statement"
+          },
+          {
+            "title": "How can I get an account details document?",
+            "link": "/help/articles/2977999/how-can-i-get-an-account-details-document",
+            "order": 2,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/08-bills-and-statements/articles/02-how-can-i-get-an-account-details-document"
+          },
+          {
+            "title": "How do I download a list of my transfers?",
+            "link": "/help/articles/2489458/how-do-i-download-a-list-of-my-transfers",
+            "order": 3,
+            "folder_path": "scraped-data/sections/02-managing-your-account/subsections/08-bills-and-statements/articles/03-how-do-i-download-a-list-of-my-transfers"
+          }
+        ],
+        "folder_path": "scraped-data/sections/02-managing-your-account/subsections/08-bills-and-statements"
+      }
+    ]
+  },
+  {
+    "path": "scraped-data/sections/03-holding-money",
+    "order": 3,
+    "link": "https://wise.com/help/topics/5U80whCL1cmJnbIVNGsm3h/holding-money",
+    "heading": "Holding money",
+    "title": "Holding balances, setting up Direct Debits, and using Assets.",
+    "subsections": [
+      {
+        "order": 1,
+        "heading": "Holding money basics",
+        "articles": [
+          {
+            "title": "Why can't I open a Wise balance?",
+            "link": "/help/articles/2813542/why-cant-i-open-a-wise-balance",
+            "order": 1,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/01-why-can-t-i-open-a-wise-balance"
+          },
+          {
+            "title": "How Wise keeps your money safe",
+            "link": "/help/articles/2949821/how-wise-keeps-your-money-safe",
+            "order": 2,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/02-how-wise-keeps-your-money-safe"
+          },
+          {
+            "title": "How do I open a balance?",
+            "link": "/help/articles/2897234/how-do-i-open-a-balance",
+            "order": 3,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/03-how-do-i-open-a-balance"
+          },
+          {
+            "title": "Which currencies can I add, keep and receive in my Wise account?",
+            "link": "/help/articles/2897238/which-currencies-can-i-add-keep-and-receive-in-my-wise-account",
+            "order": 4,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/04-which-currencies-can-i-add-keep-and-receive-in-my-wise-account"
+          },
+          {
+            "title": "How does Wise hold my money?",
+            "link": "/help/articles/2736035/how-does-wise-hold-my-money",
+            "order": 5,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/05-how-does-wise-hold-my-money"
+          },
+          {
+            "title": "How can I convert money?",
+            "link": "/help/articles/2596980/how-can-i-convert-money",
+            "order": 6,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/06-how-can-i-convert-money"
+          },
+          {
+            "title": "What are Jars and how do I use them?",
+            "link": "/help/articles/2978074/what-are-jars-and-how-do-i-use-them",
+            "order": 7,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/07-what-are-jars-and-how-do-i-use-them"
+          },
+          {
+            "title": "How do I close my balances?",
+            "link": "/help/articles/2932127/how-do-i-close-my-balances",
+            "order": 8,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/08-how-do-i-close-my-balances"
+          },
+          {
+            "title": "What fee am I charged to hold large amounts of EUR?",
+            "link": "/help/articles/2978082/what-fee-am-i-charged-to-hold-large-amounts-of-eur",
+            "order": 9,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/09-what-fee-am-i-charged-to-hold-large-amounts-of-eur"
+          },
+          {
+            "title": "I live in Australia, what fee am I charged to hold large amounts of money?",
+            "link": "/help/articles/5Sle9tyfybL40w6D2ajcMV/i-live-in-australia-what-fee-am-i-charged-to-hold-large-amounts-of-money",
+            "order": 10,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/10-i-live-in-australia-what-fee-am-i-charged-to-hold-large-amounts-of-money"
+          },
+          {
+            "title": "Holding limits if you live in Japan",
+            "link": "/help/articles/3GBSRou4DTXxYz1piNbzN5/holding-limits-if-you-live-in-japan",
+            "order": 11,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/11-holding-limits-if-you-live-in-japan"
+          },
+          {
+            "title": "Holding limits if you live in Malaysia",
+            "link": "/help/articles/5sL5X2V2PbxUBIsQ1Fyfn4/holding-limits-if-you-live-in-malaysia",
+            "order": 12,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics/articles/12-holding-limits-if-you-live-in-malaysia"
+          }
+        ],
+        "folder_path": "scraped-data/sections/03-holding-money/subsections/01-holding-money-basics"
+      },
+      {
+        "order": 2,
+        "heading": "Adding money to your balances",
+        "articles": [
+          {
+            "title": "How do I add money to a balance?",
+            "link": "/help/articles/2596978/how-do-i-add-money-to-a-balance",
+            "order": 1,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/02-adding-money-to-your-balances/articles/01-how-do-i-add-money-to-a-balance"
+          }
+        ],
+        "folder_path": "scraped-data/sections/03-holding-money/subsections/02-adding-money-to-your-balances"
+      },
+      {
+        "order": 3,
+        "heading": "Managing your Direct Debits",
+        "articles": [
+          {
+            "title": "How do I set up Direct Debits?",
+            "link": "/help/articles/2977956/how-do-i-set-up-direct-debits",
+            "order": 1,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/03-managing-your-direct-debits/articles/01-how-do-i-set-up-direct-debits"
+          },
+          {
+            "title": "How do I see what Direct Debits I have?",
+            "link": "/help/articles/2977958/how-do-i-see-what-direct-debits-i-have",
+            "order": 2,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/03-managing-your-direct-debits/articles/02-how-do-i-see-what-direct-debits-i-have"
+          },
+          {
+            "title": "How do I cancel a Direct Debit?",
+            "link": "/help/articles/2977957/how-do-i-cancel-a-direct-debit",
+            "order": 3,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/03-managing-your-direct-debits/articles/03-how-do-i-cancel-a-direct-debit"
+          },
+          {
+            "title": "Why did my Direct Debit fail?",
+            "link": "/help/articles/2978057/why-did-my-direct-debit-fail",
+            "order": 4,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/03-managing-your-direct-debits/articles/04-why-did-my-direct-debit-fail"
+          },
+          {
+            "title": "Can I request a refund for my Direct Debit?",
+            "link": "/help/articles/2978045/can-i-request-a-refund-for-my-direct-debit",
+            "order": 5,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/03-managing-your-direct-debits/articles/05-can-i-request-a-refund-for-my-direct-debit"
+          }
+        ],
+        "folder_path": "scraped-data/sections/03-holding-money/subsections/03-managing-your-direct-debits"
+      },
+      {
+        "order": 4,
+        "heading": "Using Assets",
+        "articles": [
+          {
+            "title": "How do I use Assets?",
+            "link": "/help/articles/74dYRhMCItIf2IBJLTpFQs/how-do-i-use-assets",
+            "order": 1,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/01-how-do-i-use-assets"
+          },
+          {
+            "title": "Who can use Assets?",
+            "link": "/help/articles/31thpWvBl38OL54poT6VAE/who-can-use-assets",
+            "order": 2,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/02-who-can-use-assets"
+          },
+          {
+            "title": "What taxes do I need to pay when I use Assets?",
+            "link": "/help/articles/4vA3EJSQTbRlgQTQpoVQUo/what-taxes-do-i-need-to-pay-when-i-use-assets",
+            "order": 3,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/03-what-taxes-do-i-need-to-pay-when-i-use-assets"
+          },
+          {
+            "title": "Is my money safe using Assets?",
+            "link": "/help/articles/144iDX5R3dr8REvgtlDUx9/is-my-money-safe-using-assets",
+            "order": 4,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/04-is-my-money-safe-using-assets"
+          },
+          {
+            "title": "Licences and regulators when holding money as different Assets",
+            "link": "/help/articles/4Mo9V7MyXos6scM7xvhg15/licences-and-regulators-when-holding-money-as-different-assets",
+            "order": 5,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/05-licences-and-regulators-when-holding-money-as-different-assets"
+          },
+          {
+            "title": "How do I make a complaint if my Balance or Jar is held as Assets?",
+            "link": "/help/articles/4s7cddihFleSEz7cVQz8sx/how-do-i-make-a-complaint-if-my-balance-or-jar-is-held-as-assets",
+            "order": 6,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/06-how-do-i-make-a-complaint-if-my-balance-or-jar-is-held-as-assets"
+          },
+          {
+            "title": "Holding your money as Stocks",
+            "link": "/help/articles/3luodUQFD9YWzNc8PvIfVK/holding-your-money-as-stocks",
+            "order": 7,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/07-holding-your-money-as-stocks"
+          },
+          {
+            "title": "Managing your Balance or Jar when it\u2019s held as Stocks",
+            "link": "/help/articles/7kcbhoEHqqwuWEvPLQpwJ7/managing-your-balance-or-jar-when-its-held-as-stocks",
+            "order": 8,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/08-managing-your-balance-or-jar-when-its-held-as-stocks"
+          },
+          {
+            "title": "What fees do I pay when I hold money as Stocks?",
+            "link": "/help/articles/7g1DIlvBb2mU2iCLQVwgdx/what-fees-do-i-pay-when-i-hold-money-as-stocks",
+            "order": 9,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/09-what-fees-do-i-pay-when-i-hold-money-as-stocks"
+          },
+          {
+            "title": "What's the risk of investing in Stocks?",
+            "link": "/help/articles/1aLIqy0aXKFpngiAOcZazj/whats-the-risk-of-investing-in-stocks",
+            "order": 10,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/10-what-s-the-risk-of-investing-in-stocks"
+          },
+          {
+            "title": "Understanding how your money is performing when you hold it as Stocks",
+            "link": "/help/articles/B9ZPY1rj6TlzvVOhtonFo/understanding-how-your-money-is-performing-when-you-hold-it-as-stocks",
+            "order": 11,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/11-understanding-how-your-money-is-performing-when-you-hold-it-as-stocks"
+          },
+          {
+            "title": "Understanding conversion when you hold money as Stocks",
+            "link": "/help/articles/4EWjIOTVX2glaW1RhzpqbE/understanding-conversion-when-you-hold-money-as-stocks",
+            "order": 12,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/12-understanding-conversion-when-you-hold-money-as-stocks"
+          },
+          {
+            "title": "Information for UK taxpayers holding money in Stocks",
+            "link": "/help/articles/MVFEd54EsMX1v51lbqNh4/information-for-uk-taxpayers-holding-money-in-stocks",
+            "order": 13,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/13-information-for-uk-taxpayers-holding-money-in-stocks"
+          },
+          {
+            "title": "UK Tax Self-Assessment",
+            "link": "/help/articles/77hw3lBoT7k9YtAOiMZHm4/uk-tax-self-assessment",
+            "order": 14,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/14-uk-tax-self-assessment"
+          },
+          {
+            "title": "Managing your Balance or Jar when it's held as Interest",
+            "link": "/help/articles/5kdpzaHyM0pla2j2YzgeFj/managing-your-balance-or-jar-when-its-held-as-interest",
+            "order": 15,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/15-managing-your-balance-or-jar-when-it-s-held-as-interest"
+          },
+          {
+            "title": "Using Wise Interest",
+            "link": "/help/articles/GDxZxemd21yDVP4TQmdDJ/using-wise-interest",
+            "order": 16,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/16-using-wise-interest"
+          },
+          {
+            "title": "Understanding how your money is performing when you hold it as Interest",
+            "link": "/help/articles/5ST4jzBOR6rQGbLFrgGn2W/understanding-how-your-money-is-performing-when-you-hold-it-as-interest",
+            "order": 17,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/17-understanding-how-your-money-is-performing-when-you-hold-it-as-interest"
+          },
+          {
+            "title": "What's the risk of holding money in interest?",
+            "link": "/help/articles/5W5j4mHrJQezaHSEyAykHE/whats-the-risk-of-holding-money-in-interest",
+            "order": 18,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/18-what-s-the-risk-of-holding-money-in-interest"
+          },
+          {
+            "title": "What fees do I pay when I hold money in an interest-earning fund?",
+            "link": "/help/articles/10HD8UtqMLH89OPpjdVuu2/what-fees-do-i-pay-when-i-hold-money-in-an-interest-earning-fund",
+            "order": 19,
+            "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets/articles/19-what-fees-do-i-pay-when-i-hold-money-in-an-interest-earning-fund"
+          }
+        ],
+        "folder_path": "scraped-data/sections/03-holding-money/subsections/04-using-assets"
+      }
+    ]
+  },
+  {
+    "path": "scraped-data/sections/04-wise-card",
+    "order": 4,
+    "link": "https://wise.com/help/topics/6Tme4V2z9ONNzQMeqJpcVi/wise-card",
+    "heading": "Wise card",
+    "title": "Ordering, activating, spending, and troubleshooting.",
+    "subsections": [
+      {
+        "order": 1,
+        "heading": "Wise card basics",
+        "articles": [
+          {
+            "title": "Getting started with the Wise card",
+            "link": "/help/articles/2970190/getting-started-with-the-wise-card",
+            "order": 1,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/01-getting-started-with-the-wise-card"
+          },
+          {
+            "title": "Getting started with your Wise digital card",
+            "link": "/help/articles/1AqrRndtxosydM2GLR3U6T/getting-started-with-your-wise-digital-card",
+            "order": 2,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/02-getting-started-with-your-wise-digital-card"
+          },
+          {
+            "title": "Getting started with your Wise eco card",
+            "link": "/help/articles/15r76V6dHTiTnZcgtbVImq/getting-started-with-your-wise-eco-card",
+            "order": 3,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/03-getting-started-with-your-wise-eco-card"
+          },
+          {
+            "title": "Where can I use my Wise card?",
+            "link": "/help/articles/2935771/where-can-i-use-my-wise-card",
+            "order": 4,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/04-where-can-i-use-my-wise-card"
+          },
+          {
+            "title": "How much are spending fees?",
+            "link": "/help/articles/2934551/how-much-are-spending-fees",
+            "order": 5,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/05-how-much-are-spending-fees"
+          },
+          {
+            "title": "What if I spend money in a currency that I don\u2019t have in my account?",
+            "link": "/help/articles/2935778/what-if-i-spend-money-in-a-currency-that-i-dont-have-in-my-account",
+            "order": 6,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/06-what-if-i-spend-money-in-a-currency-that-i-dont-have-in-my-account"
+          },
+          {
+            "title": "What are my spending limits?",
+            "link": "/help/articles/2899986/what-are-my-spending-limits",
+            "order": 7,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/07-what-are-my-spending-limits"
+          },
+          {
+            "title": "How do I change my spending limits?",
+            "link": "/help/articles/2977986/how-do-i-change-my-spending-limits",
+            "order": 8,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/08-how-do-i-change-my-spending-limits"
+          },
+          {
+            "title": "How do I check my card details?",
+            "link": "/help/articles/2978078/how-do-i-check-my-card-details",
+            "order": 9,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/09-how-do-i-check-my-card-details"
+          },
+          {
+            "title": "Naming your Wise card",
+            "link": "/help/articles/50rPXZssqlRXB6Vny9yvJC/naming-your-wise-card",
+            "order": 10,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics/articles/10-naming-your-wise-card"
+          }
+        ],
+        "folder_path": "scraped-data/sections/04-wise-card/subsections/01-wise-card-basics"
+      },
+      {
+        "order": 2,
+        "heading": "ATM and PIN",
+        "articles": [
+          {
+            "title": "How much does it cost to withdraw cash?",
+            "link": "/help/articles/2935769/how-much-does-it-cost-to-withdraw-cash",
+            "order": 1,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/02-atm-and-pin/articles/01-how-much-does-it-cost-to-withdraw-cash"
+          },
+          {
+            "title": "What if I've forgotten my PIN?",
+            "link": "/help/articles/2935781/what-if-ive-forgotten-my-pin",
+            "order": 2,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/02-atm-and-pin/articles/02-what-if-i-ve-forgotten-my-pin"
+          },
+          {
+            "title": "How do I change my PIN?",
+            "link": "/help/articles/2977978/how-do-i-change-my-pin",
+            "order": 3,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/02-atm-and-pin/articles/03-how-do-i-change-my-pin"
+          },
+          {
+            "title": "An ATM didn't give me my cash",
+            "link": "/help/articles/2977983/an-atm-didnt-give-me-my-cash",
+            "order": 4,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/02-atm-and-pin/articles/04-an-atm-didn-t-give-me-my-cash"
+          },
+          {
+            "title": "I got charged the wrong rate",
+            "link": "/help/articles/2977949/i-got-charged-the-wrong-rate",
+            "order": 5,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/02-atm-and-pin/articles/05-i-got-charged-the-wrong-rate"
+          }
+        ],
+        "folder_path": "scraped-data/sections/04-wise-card/subsections/02-atm-and-pin"
+      },
+      {
+        "order": 3,
+        "heading": "Problems using your card",
+        "articles": [
+          {
+            "title": "How do I replace or cancel my Wise card?",
+            "link": "/help/articles/2935787/how-do-i-replace-or-cancel-my-wise-card",
+            "order": 1,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/01-how-do-i-replace-or-cancel-my-wise-card"
+          },
+          {
+            "title": "How do I replace or delete my digital card(s)?",
+            "link": "/help/articles/6cPdnnTy4nktu5Gh1CLmMh/how-do-i-replace-or-delete-my-digital-cards",
+            "order": 2,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/02-how-do-i-replace-or-delete-my-digital-card-s"
+          },
+          {
+            "title": "How do I get a refund if my digital card was replaced or deleted?",
+            "link": "/help/articles/5tx4dayTG2b6vLxGl8KfTW/how-do-i-get-a-refund-if-my-digital-card-was-replaced-or-deleted",
+            "order": 3,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/03-how-do-i-get-a-refund-if-my-digital-card-was-replaced-or-deleted"
+          },
+          {
+            "title": "I've been charged multiple times for the same transaction?",
+            "link": "/help/articles/2978022/ive-been-charged-multiple-times-for-the-same-transaction",
+            "order": 4,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/04-i-ve-been-charged-multiple-times-for-the-same-transaction"
+          },
+          {
+            "title": "Why doesn't contactless work for my Wise card?",
+            "link": "/help/articles/2935789/why-doesnt-contactless-work-for-my-wise-card",
+            "order": 5,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/05-why-doesn-t-contactless-work-for-my-wise-card"
+          },
+          {
+            "title": "A transaction isn't showing in my activity list",
+            "link": "/help/articles/2978027/a-transaction-isnt-showing-in-my-activity-list",
+            "order": 6,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/06-a-transaction-isn-t-showing-in-my-activity-list"
+          },
+          {
+            "title": "I need to reverse a transaction",
+            "link": "/help/articles/2977995/i-need-to-reverse-a-transaction",
+            "order": 7,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/07-i-need-to-reverse-a-transaction"
+          },
+          {
+            "title": "Why was my Wise card declined?",
+            "link": "/help/articles/2899605/why-was-my-wise-card-declined",
+            "order": 8,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/08-why-was-my-wise-card-declined"
+          },
+          {
+            "title": "How long do refunds to my Wise card take?",
+            "link": "/help/articles/2935785/how-long-do-refunds-to-my-wise-card-take",
+            "order": 9,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/09-how-long-do-refunds-to-my-wise-card-take"
+          },
+          {
+            "title": "A transaction is still pending",
+            "link": "/help/articles/2935784/a-transaction-is-still-pending",
+            "order": 10,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/10-a-transaction-is-still-pending"
+          },
+          {
+            "title": "I have a pre-authorised transaction",
+            "link": "/help/articles/68lrIYQQGihVPl19L5Q9fF/i-have-a-pre-authorised-transaction",
+            "order": 11,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card/articles/11-i-have-a-pre-authorised-transaction"
+          }
+        ],
+        "folder_path": "scraped-data/sections/04-wise-card/subsections/03-problems-using-your-card"
+      },
+      {
+        "order": 4,
+        "heading": "Ordering and activating",
+        "articles": [
+          {
+            "title": "How do I get a Wise card?",
+            "link": "/help/articles/2935762/how-do-i-get-a-wise-card",
+            "order": 1,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/01-how-do-i-get-a-wise-card"
+          },
+          {
+            "title": "How do I get a Wise digital card?",
+            "link": "/help/articles/5O9VNQR4wt3iXwV0Dmm6zB/how-do-i-get-a-wise-digital-card",
+            "order": 2,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/02-how-do-i-get-a-wise-digital-card"
+          },
+          {
+            "title": "Can I get the Wise card in my country?",
+            "link": "/help/articles/2968915/can-i-get-the-wise-card-in-my-country",
+            "order": 3,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/03-can-i-get-the-wise-card-in-my-country"
+          },
+          {
+            "title": "Can I speed up my card order?",
+            "link": "/help/articles/1L8kQXq7PmXhX6FP6Eo6Ph/can-i-speed-up-my-card-order",
+            "order": 4,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/04-can-i-speed-up-my-card-order"
+          },
+          {
+            "title": "How do I activate my Wise card?",
+            "link": "/help/articles/2978024/how-do-i-activate-my-wise-card",
+            "order": 5,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/05-how-do-i-activate-my-wise-card"
+          },
+          {
+            "title": "My Wise card hasn't arrived yet",
+            "link": "/help/articles/2935763/my-wise-card-hasnt-arrived-yet",
+            "order": 6,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/06-my-wise-card-hasn-t-arrived-yet"
+          },
+          {
+            "title": "I need to change my delivery address",
+            "link": "/help/articles/2978007/i-need-to-change-my-delivery-address",
+            "order": 7,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/07-i-need-to-change-my-delivery-address"
+          },
+          {
+            "title": "Can I get my new card delivered abroad?",
+            "link": "/help/articles/vljhhiQ7syLDgeZzEqdaO/can-i-get-my-new-card-delivered-abroad",
+            "order": 8,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/08-can-i-get-my-new-card-delivered-abroad"
+          },
+          {
+            "title": "How can I change the name on my Wise card?",
+            "link": "/help/articles/2977976/how-can-i-change-the-name-on-my-wise-card",
+            "order": 9,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating/articles/09-how-can-i-change-the-name-on-my-wise-card"
+          }
+        ],
+        "folder_path": "scraped-data/sections/04-wise-card/subsections/04-ordering-and-activating"
+      },
+      {
+        "order": 5,
+        "heading": "Mobile wallet",
+        "articles": [
+          {
+            "title": "How do I use my Wise card with Google Pay?",
+            "link": "/help/articles/2977965/how-do-i-use-my-wise-card-with-google-pay",
+            "order": 1,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/05-mobile-wallet/articles/01-how-do-i-use-my-wise-card-with-google-pay"
+          },
+          {
+            "title": "How do I use my Wise card with Apple Pay?",
+            "link": "/help/articles/2935788/how-do-i-use-my-wise-card-with-apple-pay",
+            "order": 2,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/05-mobile-wallet/articles/02-how-do-i-use-my-wise-card-with-apple-pay"
+          },
+          {
+            "title": "How do I use my Wise card with Garmin Pay or Fitbit Pay?",
+            "link": "/help/articles/2977968/how-do-i-use-my-wise-card-with-garmin-pay-or-fitbit-pay",
+            "order": 3,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/05-mobile-wallet/articles/03-how-do-i-use-my-wise-card-with-garmin-pay-or-fitbit-pay"
+          },
+          {
+            "title": "What if I can't add my Wise card to my mobile wallet?",
+            "link": "/help/articles/2977967/what-if-i-cant-add-my-wise-card-to-my-mobile-wallet",
+            "order": 4,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/05-mobile-wallet/articles/04-what-if-i-can-t-add-my-wise-card-to-my-mobile-wallet"
+          },
+          {
+            "title": "How do I use my Wise card with Samsung Pay?",
+            "link": "/help/articles/2977966/how-do-i-use-my-wise-card-with-samsung-pay",
+            "order": 5,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/05-mobile-wallet/articles/05-how-do-i-use-my-wise-card-with-samsung-pay"
+          }
+        ],
+        "folder_path": "scraped-data/sections/04-wise-card/subsections/05-mobile-wallet"
+      },
+      {
+        "order": 6,
+        "heading": "Fraud and security",
+        "articles": [
+          {
+            "title": "What should I do if my Wise card is lost or stolen?",
+            "link": "/help/articles/2935777/what-should-i-do-if-my-wise-card-is-lost-or-stolen",
+            "order": 1,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/06-fraud-and-security/articles/01-what-should-i-do-if-my-wise-card-is-lost-or-stolen"
+          },
+          {
+            "title": "How do I freeze or unfreeze my Wise card?",
+            "link": "/help/articles/2977977/how-do-i-freeze-or-unfreeze-my-wise-card",
+            "order": 2,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/06-fraud-and-security/articles/02-how-do-i-freeze-or-unfreeze-my-wise-card"
+          },
+          {
+            "title": "I didn't get the goods/services I paid for",
+            "link": "/help/articles/2946416/i-didnt-get-the-goodsservices-i-paid-for",
+            "order": 3,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/06-fraud-and-security/articles/03-i-didn-t-get-the-goods-services-i-paid-for"
+          },
+          {
+            "title": "I need to report a fraudulent payment",
+            "link": "/help/articles/2935783/i-need-to-report-a-fraudulent-payment",
+            "order": 4,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/06-fraud-and-security/articles/04-i-need-to-report-a-fraudulent-payment"
+          },
+          {
+            "title": "I don't recognise a subscription on my account",
+            "link": "/help/articles/2978025/i-dont-recognise-a-subscription-on-my-account",
+            "order": 5,
+            "folder_path": "scraped-data/sections/04-wise-card/subsections/06-fraud-and-security/articles/05-i-don-t-recognise-a-subscription-on-my-account"
+          }
+        ],
+        "folder_path": "scraped-data/sections/04-wise-card/subsections/06-fraud-and-security"
+      }
+    ]
+  },
+  {
+    "path": "scraped-data/sections/05-receiving-money",
+    "order": 5,
+    "link": "https://wise.com/help/topics/1pXx5wZnF7Rp83VWwzGPUv/receiving-money",
+    "heading": "Receiving money",
+    "title": "Using your account details to receive money.",
+    "subsections": [
+      {
+        "order": 1,
+        "heading": "Receiving money basics",
+        "articles": [
+          {
+            "title": "I'm expecting money, but it hasn't arrived yet",
+            "link": "/help/articles/2977937/im-expecting-money-but-it-hasnt-arrived-yet",
+            "order": 1,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/01-i-m-expecting-money-but-it-hasn-t-arrived-yet"
+          },
+          {
+            "title": "How do I receive money?",
+            "link": "/help/articles/2898124/how-do-i-receive-money",
+            "order": 2,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/02-how-do-i-receive-money"
+          },
+          {
+            "title": "What types of payments can I receive into my account?",
+            "link": "/help/articles/2784317/what-types-of-payments-can-i-receive-into-my-account",
+            "order": 3,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/03-what-types-of-payments-can-i-receive-into-my-account"
+          },
+          {
+            "title": "Are there limits on how much money I can receive?",
+            "link": "/help/articles/2893492/are-there-limits-on-how-much-money-i-can-receive",
+            "order": 4,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/04-are-there-limits-on-how-much-money-i-can-receive"
+          },
+          {
+            "title": "How long does it take to receive money into a balance?",
+            "link": "/help/articles/2978029/how-long-does-it-take-to-receive-money-into-a-balance",
+            "order": 5,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/05-how-long-does-it-take-to-receive-money-into-a-balance"
+          },
+          {
+            "title": "How much does it cost to receive large amounts into my account?",
+            "link": "/help/articles/2978013/how-much-does-it-cost-to-receive-large-amounts-into-my-account",
+            "order": 6,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/06-how-much-does-it-cost-to-receive-large-amounts-into-my-account"
+          },
+          {
+            "title": "Can I receive large amounts into my Wise account?",
+            "link": "/help/articles/2978015/can-i-receive-large-amounts-into-my-wise-account",
+            "order": 7,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/07-can-i-receive-large-amounts-into-my-wise-account"
+          },
+          {
+            "title": "Do I need to do anything before receiving a large amount?",
+            "link": "/help/articles/2978009/do-i-need-to-do-anything-before-receiving-a-large-amount",
+            "order": 8,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/08-do-i-need-to-do-anything-before-receiving-a-large-amount"
+          },
+          {
+            "title": "How do I request money?",
+            "link": "/help/articles/2WvlZST6DiDMUBhyl1N4zM/how-do-i-request-money",
+            "order": 9,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics/articles/09-how-do-i-request-money"
+          }
+        ],
+        "folder_path": "scraped-data/sections/05-receiving-money/subsections/01-receiving-money-basics"
+      },
+      {
+        "order": 2,
+        "heading": "Using your account details",
+        "articles": [
+          {
+            "title": "How do I get account details?",
+            "link": "/help/articles/2978028/how-do-i-get-account-details",
+            "order": 1,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/01-how-do-i-get-account-details"
+          },
+          {
+            "title": "How do I use my AUD account details?",
+            "link": "/help/articles/2879660/how-do-i-use-my-aud-account-details",
+            "order": 2,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/02-how-do-i-use-my-aud-account-details"
+          },
+          {
+            "title": "How do I use my CAD account details?",
+            "link": "/help/articles/2978083/how-do-i-use-my-cad-account-details",
+            "order": 3,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/03-how-do-i-use-my-cad-account-details"
+          },
+          {
+            "title": "How do I use my EUR account details?",
+            "link": "/help/articles/2827505/how-do-i-use-my-eur-account-details",
+            "order": 4,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/04-how-do-i-use-my-eur-account-details"
+          },
+          {
+            "title": "How do I use my GBP account details?",
+            "link": "/help/articles/2935927/how-do-i-use-my-gbp-account-details",
+            "order": 5,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/05-how-do-i-use-my-gbp-account-details"
+          },
+          {
+            "title": "How do I use my HUF account details?",
+            "link": "/help/articles/2978073/how-do-i-use-my-huf-account-details",
+            "order": 6,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/06-how-do-i-use-my-huf-account-details"
+          },
+          {
+            "title": "How do I use my MYR account details?",
+            "link": "/help/articles/2lDYkmGHRiyfl1T8XKuahU/how-do-i-use-my-myr-account-details",
+            "order": 7,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/07-how-do-i-use-my-myr-account-details"
+          },
+          {
+            "title": "How do I use my NZD account details?",
+            "link": "/help/articles/2962566/how-do-i-use-my-nzd-account-details",
+            "order": 8,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/08-how-do-i-use-my-nzd-account-details"
+          },
+          {
+            "title": "How do I use my PLN account details?",
+            "link": "/help/articles/2977948/how-do-i-use-my-pln-account-details",
+            "order": 9,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/09-how-do-i-use-my-pln-account-details"
+          },
+          {
+            "title": "How do I use my RON account details?",
+            "link": "/help/articles/2978062/how-do-i-use-my-ron-account-details",
+            "order": 10,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/10-how-do-i-use-my-ron-account-details"
+          },
+          {
+            "title": "How do I use my SGD account details?",
+            "link": "/help/articles/2978053/how-do-i-use-my-sgd-account-details",
+            "order": 11,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/11-how-do-i-use-my-sgd-account-details"
+          },
+          {
+            "title": "How do I use my TRY account details?",
+            "link": "/help/articles/2978080/how-do-i-use-my-try-account-details",
+            "order": 12,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/12-how-do-i-use-my-try-account-details"
+          },
+          {
+            "title": "How do I use my USD account details?",
+            "link": "/help/articles/2827506/how-do-i-use-my-usd-account-details",
+            "order": 13,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details/articles/13-how-do-i-use-my-usd-account-details"
+          }
+        ],
+        "folder_path": "scraped-data/sections/05-receiving-money/subsections/02-using-your-account-details"
+      },
+      {
+        "order": 3,
+        "heading": "Receiving e-commerce payments",
+        "articles": [
+          {
+            "title": "How do I receive money from Amazon with Wise?",
+            "link": "/help/articles/2968914/how-do-i-receive-money-from-amazon-with-wise",
+            "order": 1,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/03-receiving-e-commerce-payments/articles/01-how-do-i-receive-money-from-amazon-with-wise"
+          },
+          {
+            "title": "How do I receive money from Stripe with Wise?",
+            "link": "/help/articles/2977935/how-do-i-receive-money-from-stripe-with-wise",
+            "order": 2,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/03-receiving-e-commerce-payments/articles/02-how-do-i-receive-money-from-stripe-with-wise"
+          },
+          {
+            "title": "How do I receive money from Upwork with Wise?",
+            "link": "/help/articles/3IEbUhciJteGOo2WT914W9/how-do-i-receive-money-from-upwork-with-wise",
+            "order": 3,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/03-receiving-e-commerce-payments/articles/03-how-do-i-receive-money-from-upwork-with-wise"
+          },
+          {
+            "title": "How do I receive money from Etsy with Wise?",
+            "link": "/help/articles/1T5VJXy3aUX3HesEdMqSGe/how-do-i-receive-money-from-etsy-with-wise",
+            "order": 4,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/03-receiving-e-commerce-payments/articles/04-how-do-i-receive-money-from-etsy-with-wise"
+          },
+          {
+            "title": "How do I receive money from GOAT with Wise?",
+            "link": "/help/articles/44b7744FN9ICaWnm4eWqNu/how-do-i-receive-money-from-goat-with-wise",
+            "order": 5,
+            "folder_path": "scraped-data/sections/05-receiving-money/subsections/03-receiving-e-commerce-payments/articles/05-how-do-i-receive-money-from-goat-with-wise"
+          }
+        ],
+        "folder_path": "scraped-data/sections/05-receiving-money/subsections/03-receiving-e-commerce-payments"
+      }
+    ]
+  },
+  {
+    "path": "scraped-data/sections/06-wise-business",
+    "order": 6,
+    "link": "https://wise.com/help/topics/4weIubYURiKk7XZK3ZawNx/wise-business",
+    "heading": "Wise Business",
+    "title": "Multi-user access, accounting and using our API.",
+    "subsections": [
+      {
+        "order": 1,
+        "heading": "Wise Business basics",
+        "articles": [
+          {
+            "title": "Are there any restrictions on business transfers?",
+            "link": "/help/articles/2570950/are-there-any-restrictions-on-business-transfers",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/01-are-there-any-restrictions-on-business-transfers"
+          },
+          {
+            "title": "Can my business get a Wise card?",
+            "link": "/help/articles/2935775/can-my-business-get-a-wise-card",
+            "order": 2,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/02-can-my-business-get-a-wise-card"
+          },
+          {
+            "title": "Can my business use Wise?",
+            "link": "/help/articles/2977974/can-my-business-use-wise",
+            "order": 3,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/03-can-my-business-use-wise"
+          },
+          {
+            "title": "Can I have more than one business account?",
+            "link": "/help/articles/2977970/can-i-have-more-than-one-business-account",
+            "order": 4,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/04-can-i-have-more-than-one-business-account"
+          },
+          {
+            "title": "Can I send from a business bank account?",
+            "link": "/help/articles/2977992/can-i-send-from-a-business-bank-account",
+            "order": 5,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/05-can-i-send-from-a-business-bank-account"
+          },
+          {
+            "title": "How do I move money between my Wise business and personal accounts?",
+            "link": "/help/articles/2977972/how-do-i-move-money-between-my-wise-business-and-personal-accounts",
+            "order": 6,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/06-how-do-i-move-money-between-my-wise-business-and-personal-accounts"
+          },
+          {
+            "title": "Tips for paying invoices",
+            "link": "/help/articles/2932870/tips-for-paying-invoices",
+            "order": 7,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/07-tips-for-paying-invoices"
+          },
+          {
+            "title": "How do I send money as a business?",
+            "link": "/help/articles/2950528/how-do-i-send-money-as-a-business",
+            "order": 8,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics/articles/08-how-do-i-send-money-as-a-business"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/01-wise-business-basics"
+      },
+      {
+        "order": 2,
+        "heading": "Managing and verifying your business account",
+        "articles": [
+          {
+            "title": "How do I open a Wise account for my business?",
+            "link": "/help/articles/2961337/how-do-i-open-a-wise-account-for-my-business",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/01-how-do-i-open-a-wise-account-for-my-business"
+          },
+          {
+            "title": "How to open a personal account (for businesses)",
+            "link": "/help/articles/5rzMbKw3YFDpeRogUVuSlS/how-to-open-a-personal-account-for-businesses",
+            "order": 2,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/02-how-to-open-a-personal-account-for-businesses"
+          },
+          {
+            "title": "I've ended my business, what do I do?",
+            "link": "/help/articles/2978066/ive-ended-my-business-what-do-i-do",
+            "order": 3,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/03-i-ve-ended-my-business-what-do-i-do"
+          },
+          {
+            "title": "Why do I need to verify my business?",
+            "link": "/help/articles/2977981/why-do-i-need-to-verify-my-business",
+            "order": 4,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/04-why-do-i-need-to-verify-my-business"
+          },
+          {
+            "title": "How does Wise verify my business address?",
+            "link": "/help/articles/2969315/how-does-wise-verify-my-business-address",
+            "order": 5,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/05-how-does-wise-verify-my-business-address"
+          },
+          {
+            "title": "I need to edit details on a business account",
+            "link": "/help/articles/2977971/i-need-to-edit-details-on-a-business-account",
+            "order": 6,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/06-i-need-to-edit-details-on-a-business-account"
+          },
+          {
+            "title": "Can I switch between business accounts?",
+            "link": "/help/articles/2487047/can-i-switch-between-business-accounts",
+            "order": 7,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/07-can-i-switch-between-business-accounts"
+          },
+          {
+            "title": "Can I transfer my business account to someone else?",
+            "link": "/help/articles/6cPPSuMCHSrDI1VYJCzy7v/can-i-transfer-my-business-account-to-someone-else",
+            "order": 8,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/08-can-i-transfer-my-business-account-to-someone-else"
+          },
+          {
+            "title": "Separate your business accounts",
+            "link": "/help/articles/1hOs06LLDPIrkGAHCeeUOy/separate-your-business-accounts",
+            "order": 9,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/09-separate-your-business-accounts"
+          },
+          {
+            "title": "How to verify your Indian business to receive payments",
+            "link": "/help/articles/6Kpm9pXlJW79OGAktSnHos/how-to-verify-your-indian-business-to-receive-payments",
+            "order": 10,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/10-how-to-verify-your-indian-business-to-receive-payments"
+          },
+          {
+            "title": "Receiving payments for Indian businesses",
+            "link": "/help/articles/71lNXW0Ls3gEFhUH8PtodV/receiving-payments-for-indian-businesses",
+            "order": 11,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account/articles/11-receiving-payments-for-indian-businesses"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/02-managing-and-verifying-your-business-account"
+      },
+      {
+        "order": 3,
+        "heading": "Inviting and managing team members",
+        "articles": [
+          {
+            "title": "Assigning roles to your team",
+            "link": "/help/articles/2977954/assigning-roles-to-your-team",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/03-inviting-and-managing-team-members/articles/01-assigning-roles-to-your-team"
+          },
+          {
+            "title": "How do I add or remove team members?",
+            "link": "/help/articles/2977953/how-do-i-add-or-remove-team-members",
+            "order": 2,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/03-inviting-and-managing-team-members/articles/02-how-do-i-add-or-remove-team-members"
+          },
+          {
+            "title": "Who can contact Wise about my business account?",
+            "link": "/help/articles/2775376/who-can-contact-wise-about-my-business-account",
+            "order": 3,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/03-inviting-and-managing-team-members/articles/03-who-can-contact-wise-about-my-business-account"
+          },
+          {
+            "title": "Can I transfer my business account to someone else?",
+            "link": "/help/articles/6cPPSuMCHSrDI1VYJCzy7v/can-i-transfer-my-business-account-to-someone-else",
+            "order": 4,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/03-inviting-and-managing-team-members/articles/04-can-i-transfer-my-business-account-to-someone-else"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/03-inviting-and-managing-team-members"
+      },
+      {
+        "order": 4,
+        "heading": "Payment Approvals",
+        "articles": [
+          {
+            "title": "How do I check the details of an approved/rejected transfer?",
+            "link": "/help/articles/5dLOaJKVT5yAtq7G2OCCXS/how-do-i-check-the-details-of-an-approvedrejected-transfer",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/04-payment-approvals/articles/01-how-do-i-check-the-details-of-an-approved-rejected-transfer"
+          },
+          {
+            "title": "How do I approve/reject a payment requiring approval?",
+            "link": "/help/articles/PhxIBARqUVe4P7yZNVxZw/how-do-i-approvereject-a-payment-requiring-approval",
+            "order": 2,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/04-payment-approvals/articles/02-how-do-i-approve-reject-a-payment-requiring-approval"
+          },
+          {
+            "title": "How do Payment Approvals work?",
+            "link": "/help/articles/4j9ugqMIeADd89uqy8VRMB/how-do-payment-approvals-work",
+            "order": 3,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/04-payment-approvals/articles/03-how-do-payment-approvals-work"
+          },
+          {
+            "title": "How do I set up an approval rule?",
+            "link": "/help/articles/xa2f3zXL6GB4VSgkCzeVw/how-do-i-set-up-an-approval-rule",
+            "order": 4,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/04-payment-approvals/articles/04-how-do-i-set-up-an-approval-rule"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/04-payment-approvals"
+      },
+      {
+        "order": 5,
+        "heading": "Connecting to accounting software",
+        "articles": [
+          {
+            "title": "How do I connect my business account with my Xero account?",
+            "link": "/help/articles/2960344/how-do-i-connect-my-business-account-with-my-xero-account",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/01-how-do-i-connect-my-business-account-with-my-xero-account"
+          },
+          {
+            "title": "How do I sync my Wise transactions to Xero?",
+            "link": "/help/articles/2969244/how-do-i-sync-my-wise-transactions-to-xero",
+            "order": 2,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/02-how-do-i-sync-my-wise-transactions-to-xero"
+          },
+          {
+            "title": "How do I import previous Wise transactions to Xero?",
+            "link": "/help/articles/2966380/how-do-i-import-previous-wise-transactions-to-xero",
+            "order": 3,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/03-how-do-i-import-previous-wise-transactions-to-xero"
+          },
+          {
+            "title": "Can I connect Xero with my personal account?",
+            "link": "/help/articles/2960251/can-i-connect-xero-with-my-personal-account",
+            "order": 4,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/04-can-i-connect-xero-with-my-personal-account"
+          },
+          {
+            "title": "Why isn't my Xero bank account ready to connect?",
+            "link": "/help/articles/2967657/why-isnt-my-xero-bank-account-ready-to-connect",
+            "order": 5,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/05-why-isn-t-my-xero-bank-account-ready-to-connect"
+          },
+          {
+            "title": "Connecting your Wise account with QuickBooks",
+            "link": "/help/articles/2978059/connecting-your-wise-account-with-quickbooks",
+            "order": 6,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/06-connecting-your-wise-account-with-quickbooks"
+          },
+          {
+            "title": "Disconnecting your Wise account from QuickBooks",
+            "link": "/help/articles/2978060/disconnecting-your-wise-account-from-quickbooks",
+            "order": 7,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/07-disconnecting-your-wise-account-from-quickbooks"
+          },
+          {
+            "title": "QuickBooks is showing the wrong currency",
+            "link": "/help/articles/2978061/quickbooks-is-showing-the-wrong-currency",
+            "order": 8,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/08-quickbooks-is-showing-the-wrong-currency"
+          },
+          {
+            "title": "Connecting your Wise account with FreeAgent",
+            "link": "/help/articles/2978070/connecting-your-wise-account-with-freeagent",
+            "order": 9,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/09-connecting-your-wise-account-with-freeagent"
+          },
+          {
+            "title": "Disconnecting your Wise account from FreeAgent",
+            "link": "/help/articles/2978069/disconnecting-your-wise-account-from-freeagent",
+            "order": 10,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/10-disconnecting-your-wise-account-from-freeagent"
+          },
+          {
+            "title": "How does my connection with Xero work?",
+            "link": "/help/articles/6J8osmdCN8GHEJexZcldV/how-does-my-connection-with-xero-work",
+            "order": 11,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software/articles/11-how-does-my-connection-with-xero-work"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/05-connecting-to-accounting-software"
+      },
+      {
+        "order": 6,
+        "heading": "Batch payments",
+        "articles": [
+          {
+            "title": "Guide to batch payments",
+            "link": "/help/articles/2663240/guide-to-batch-payments",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/01-guide-to-batch-payments"
+          },
+          {
+            "title": "Can I automate batch payments?",
+            "link": "/help/articles/2942784/can-i-automate-batch-payments",
+            "order": 2,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/02-can-i-automate-batch-payments"
+          },
+          {
+            "title": "Can I pay for different currencies in a single batch?",
+            "link": "/help/articles/2663303/can-i-pay-for-different-currencies-in-a-single-batch",
+            "order": 3,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/03-can-i-pay-for-different-currencies-in-a-single-batch"
+          },
+          {
+            "title": "What's a batch payment template?",
+            "link": "/help/articles/2663296/whats-a-batch-payment-template",
+            "order": 4,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/04-what-s-a-batch-payment-template"
+          },
+          {
+            "title": "How do I fill in my template?",
+            "link": "/help/articles/2663302/how-do-i-fill-in-my-template",
+            "order": 5,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/05-how-do-i-fill-in-my-template"
+          },
+          {
+            "title": "Why do I get an error when I upload my file?",
+            "link": "/help/articles/2942777/why-do-i-get-an-error-when-i-upload-my-file",
+            "order": 6,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/06-why-do-i-get-an-error-when-i-upload-my-file"
+          },
+          {
+            "title": "Can I use Wise to run my payroll on Time Doctor?",
+            "link": "/help/articles/2942772/can-i-use-wise-to-run-my-payroll-on-time-doctor",
+            "order": 7,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/07-can-i-use-wise-to-run-my-payroll-on-time-doctor"
+          },
+          {
+            "title": "How do I pay for my batch?",
+            "link": "/help/articles/2942762/how-do-i-pay-for-my-batch",
+            "order": 8,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/08-how-do-i-pay-for-my-batch"
+          },
+          {
+            "title": "Sending exact amounts \u2500 Batch payments",
+            "link": "/help/articles/5iWcIUdYHyTQMnezSzx4n3/sending-exact-amounts-batch-payments",
+            "order": 9,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments/articles/09-sending-exact-amounts-batch-payments"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/06-batch-payments"
+      },
+      {
+        "order": 7,
+        "heading": "Using our API",
+        "articles": [
+          {
+            "title": "What's the Wise API?",
+            "link": "/help/articles/2958106/whats-the-wise-api",
+            "order": 1,
+            "folder_path": "scraped-data/sections/06-wise-business/subsections/07-using-our-api/articles/01-what-s-the-wise-api"
+          }
+        ],
+        "folder_path": "scraped-data/sections/06-wise-business/subsections/07-using-our-api"
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+# Sending money basics  
+## Do I need to pay any tax on transfers?  
+Wise may have to levy tax on its transfer fee according to local tax laws. For example, Brazilian real (BRL) transactions where IOF (Imposto sobre Operações Financeiras — financial operations tax) may be imposed by our banking partner(s). Where transactional taxes apply, these will either be included in the fee payable or shown separately at the time of payment, and won’t impact the amount sent to the recipient.
+
+Wise will pay out the agreed amount to the recipient and won’t withhold any taxes on money you transfer. Depending on the nature of a transfer, you and/or the recipient may need to declare and pay tax. Wise can’t advise whether tax applies to your transfer and we recommend that you ask a financial advisor and/or the relevant tax authority.

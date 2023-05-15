@@ -1,25 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Heroku Flask Template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-        <h1 id="tittle">Heroku Flask Template</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="https://github.com/vetronus/heroku-flask-template">SOURCE CODE(GitHub)</a></li>
-                <li><a href="http://parthsarthee.com/">PARTH SARTHEE(Author)</a></li>
-                <li><a href="http://aroxbit.com">AROXBIT(Awesome Indie Startup)</a></li>
-            </ul>
-        </nav>
-        <h2>What is Heroku Flask Template</h2>
-        <p>
-            Heroku Flask Template is a simple web app programmed in Python-3 using flask micro-framework. It is created for begginers to understand the basics of creating a flask web app and deploying it on the Heroku. It can also be used as a template to create your new flask web apps which can then easily be deployable on Heroku.
-        </p><br>
-        <h3>You can download this plugin, or modify its source code from <a href="https://github.com/vetronus/heroku-flask-template">GitHub</a></h3>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<section class="container">
+    <header>
+        <p>An LLM-powered Customer Support Agent for Wise, using publicly available data at https://wise.com/help only. (Use it only for testing purposes!)</p>
+    </header>
+    <section class="msger">
+        <main class="msger-chat">
+            <div class="msg left-msg">
+                <div class="msg-img" style="background-image: url(https://cdn-icons-png.flaticon.com/512/7611/7611368.png)"></div>
+
+                <div class="msg-bubble">
+                    <div class="msg-info">
+                        <div class="msg-info-name">Wise Customer Support AI</div>
+                    </div>
+
+                    <div class="msg-text">
+                        How may I help You?
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <form class="msger-inputarea">
+            <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+            <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+
+    </section>
+
+</section>
+
+
+<!-- partial -->
+<script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+<script>
+
+    const msgerForm = get(".msger-inputarea");
+    const msgerInput = get(".msger-input");
+    const msgerChat = get(".msger-chat");
+
+
+    // Icons made by Freepik from www.flaticon.com
+    const BOT_IMG = "https://cdn-icons-png.flaticon.com/512/7611/7611368.png";
+    const PERSON_IMG = "https://cdn4.iconfinder.com/data/icons/neutral-character-traits-alphabet-c/236/neutral-c010-512.png";
+    const BOT_NAME = "Wise Customer Support AI";
+    const PERSON_NAME = "You";
+
+    msgerForm.addEventListener("submit", event => {
+        event.preventDefault();
+
+        const msgText = msgerInput.value;
+        if (!msgText) return;
+
+        appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+        msgerInput.value = "";
+        botResponse(msgText);
+    });
+
+    function appendMessage(name, img, side, text) {
+        //   Simple solution for small apps
+        const msgHTML = `
+<div class="msg ${side}-msg">
+  <div class="msg-img" style="background-image: url(${img})"></div>
+
+  <div class="msg-bubble">
+    <div class="msg-info">
+      <div class="msg-info-name">${name}</div>
+      <div class="msg-info-time">${formatDate(new Date())}</div>
+    </div>
+
+    <div class="msg-text">${text}</div>
+  </div>
+</div>
+`;
+
+        msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+        msgerChat.scrollTop += 500;
+    }
+
+    function botResponse(rawText) {
+
+        // Bot Response
+        $.get("/answer", {question: rawText}).done(function (data) {
+            console.log(rawText);
+            console.log(data);
+            const msgText = data.answer;
+            appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+            if (data.urls_used.length > 0) {
+                text = "These help articles were used to answer your question:";
+                // add a new line after the text
+                text += "<br>";
+                // add the array of urls_used to the text
+                // add a new line after each url. format the urls as links
+                // the url is an external one, so it will open in a new tab
+                for (let i = 0; i < data.urls_used.length; i++) {
+                    text += "<a href='" + data.urls_used[i] + "' target='_blank'>" + data.urls_used[i] + "</a><br>";
+                }
+                appendMessage(BOT_NAME, BOT_IMG, "left", text);
+            }
+        });
+
+    }
+
+
+    function addGifToChat(url) {
+        const gifHTML = `
+    <div class="msg right-msg">
+      <div class="msg-img" style="background-image: url(${PERSON_IMG})"></div>
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">${PERSON_NAME}</div>
+          <div class="msg-info-time">${formatDate(new Date())}</div>
+        </div>
+        <img src="${url}" class="msg-gif">
+      </div>
+    </div>
+  `;
+        msgerChat.insertAdjacentHTML("beforeend", gifHTML);
+        msgerChat.scrollTop += 500;
+    }
+
+    // Utils
+    function get(selector, root = document) {
+        return root.querySelector(selector);
+    }
+
+    function formatDate(date) {
+        const h = "0" + date.getHours();
+        const m = "0" + date.getMinutes();
+
+        return `${h.slice(-2)}:${m.slice(-2)}`;
+    }
+</script>
+</body>
 </html>
