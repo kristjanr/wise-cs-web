@@ -1,25 +1,11 @@
-# What is Heroku Flask Template ?
-`version 1.1`
+# wise-cs
+An LLM-powered Customer Support Agent for Wise
 
-Heroku Flask Template is a simple web app programmed in Python-3 using flask micro-framework. It is created for begginers to understand the basics of creating a flask web app and deploying it on the Heroku. It can also be used as a template to create your new flask web apps which can then easily be deployable on Heroku.
+Disclaimer:
+The content in the sections folder is scraped off of https://wise.com/help/ on 14th of May 2023.
+Do not rely on the information in this repository because it may be old and incorrect.
 
-##### Please note that this web-app is designed to be deployed on the HEROKU Platform. You can visit it by clicking [here](https://flasktemplate.herokuapp.com).
+This Agent was created for testing purposes only and should be used at your own risk.
+The author does not take any responsibility for any losses using this software may cause.
 
-## Language, Framework and Plugins used :
-- ### Python 3.6.2
-- ### Flask micro-framework
-- ### Heroku
-
-## How to use the Heroku Flask Template ?
-- ### Download or clone this template.
-- ### Add your web-pages in the `templates` folder.
-- ### Edit `main.py` to add new routes and render the web-pages.
-- ### Add all the extra plugins that you used in the `requirements.txt`.
-- ### Push it to the Heroku server and deploy.
-
-## Why I created this template ?
-I tried to deploy several of my python applications to Heroku. But it was a disaster to find out so many flaws. There were so many tutorials yet it takes so much time to figure things out, thus once I sucessfully deployed my first flask app on Heroku I decided to upload it on GitHub so that everyone can use it ! 
-
-## License and Usage :
-
-This project is completely open-source and free-to-use. But you will need to mention about its great, super awesome author XD (JK, use it anywhere you want, I really don't care.) PS, Happy Coding! 
+Always go to https://wise.com/help/ for an up-to-date answers or turn to Wise Customer Support directly.
