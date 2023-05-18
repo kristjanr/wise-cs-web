@@ -1,5 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+// @ts-ignore
+import TagManager from 'react-gtm-module';
+const tagManagerArgs = {
+    gtmId: 'G-922DE7HPS1'
+};
+
+TagManager.initialize(tagManagerArgs);
 
 const BOT_IMG = 'https://cdn-icons-png.flaticon.com/512/7611/7611368.png'
 const PERSON_IMG = 'https://cdn4.iconfinder.com/data/icons/neutral-character-traits-alphabet-c/236/neutral-c010-512.png'
