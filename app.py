@@ -95,3 +95,5 @@ if __name__ == '__main__':
 # Add a feedback button to the UI & save the feedback to DB with the question and answer
 # Add a token counter and warn the user when they are running out of tokens & ask to reset the session
 # Test if multithreading works with sessions etc
+# Copy from bing - notify when context window gets full and recommend to reset session
+# Add a feedback modal to the UI - thumbs up, neutral, thumbs down, plus a text field for comments.

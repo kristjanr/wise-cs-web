@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 // @ts-ignore
-import TagManager from 'react-gtm-module';
+import TagManager from 'react-gtm-module'
+
 const tagManagerArgs = {
     gtmId: 'G-922DE7HPS1'
-};
+}
 
-TagManager.initialize(tagManagerArgs);
+TagManager.initialize(tagManagerArgs)
 
 const BOT_IMG = 'https://cdn-icons-png.flaticon.com/512/7611/7611368.png'
 const PERSON_IMG = 'https://cdn4.iconfinder.com/data/icons/neutral-character-traits-alphabet-c/236/neutral-c010-512.png'
@@ -139,12 +140,18 @@ const Chatbot = () => {
                 </form>
             </section>
             <footer className="footer">
-                This is a private project, with no affiliation to Wise.
-                It is using publicly available information at{' '}
-                <a href="https://wise.com/help" target="_blank" rel="noopener noreferrer">
-                    https://wise.com/help
-                </a>{' '}
-                . Use it only for testing purposes!
+                <>
+                    This is a private project, with no affiliation to Wise.
+                    <br/>
+                    It is using ONLY publicly available information at{' '}
+                    <a href="https://wise.com/help" target="_blank" rel="noopener noreferrer">
+                        https://wise.com/help</a>.
+                    <br/>
+                    There's no point in asking it about your personal account details or transactions with Wise.
+                    <br/>
+                    Use it only for testing purposes.
+                    All information entered will be stored for further improvements.
+                </>
             </footer>
         </section>
     )
