@@ -1,9 +1,12 @@
-import random
+import datetime
+import urllib
+import uuid
 from collections import defaultdict
 from flask_cors import CORS, cross_origin
 import psycopg2
+import json
 
-from flask import Flask, request, session
+from flask import Flask, request, session, make_response
 import os
 import secrets
 
@@ -23,31 +26,64 @@ question_history = defaultdict(list)
 @cross_origin()
 @app.route('/')
 def index():
+    set_session_if_needed()
     return app.send_static_file('index.html')
+
+
+if 'DATABASE_URL' not in os.environ:
+    raise Exception('DATABASE_URL environment variable not set')
+# Parse the Heroku DATABASE_URL
+url = urllib.parse.urlparse(os.environ['DATABASE_URL'])
+
+# Set up connection to PostgreSQL database
+conn = psycopg2.connect(
+    host=url.hostname,
+    database=url.path[1:],
+    user=url.username,
+    password=url.password
+)
 
 
 @cross_origin()
 @app.route("/answer")
 def answer():
     set_session_if_needed()
+    session_id = session['ID']
     question = request.args.get('question')
-
-    previous_messages = message_history[session['ID']]
-    previous_questions = question_history[session['ID']]
+    previous_messages = message_history[session_id]
+    previous_questions = question_history[session_id]
 
     llm_answer, urls, new_messages = respond(question, previous_messages, previous_questions)
 
-    message_history[session['ID']].extend(new_messages)
-    question_history[session['ID']].append(question)
+    save_to_database(session_id, question, llm_answer, urls)
+
+    message_history[session_id].extend(new_messages)
+    question_history[session_id].append(question)
 
     print(f'Question: {question}, Answer: {llm_answer}, Articles used: {"/n".join(urls)}"')
     return dict(answer=llm_answer, urls_used=urls)
 
 
+def save_to_database(session_id, question, llm_answer, urls):
+    insert_query = '''
+        INSERT INTO session_history (session_id, question, llm_answer, urls)
+        VALUES (%s, %s, %s, %s)
+    '''
+    with conn.cursor() as cursor:
+        cursor.execute(insert_query, (session_id, question, llm_answer, json.dumps(urls)))
+        conn.commit()
+
+
 def set_session_if_needed():
     if session.get('ID') is None:
         print("ID puudus")
-        session['ID'] = random.randint(1, 1000000)
+        session['ID'] = str(uuid.uuid4())
+        expiry_date = datetime.datetime.now() + datetime.timedelta(days=1)
+        response = make_response()
+        response.set_cookie("session_id", session["ID"], expires=expiry_date)
+        return
+    print("ID oli olemas")
+    print(session['ID'])
 
 
 if __name__ == '__main__':
