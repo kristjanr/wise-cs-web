@@ -2,7 +2,7 @@ import random
 from collections import defaultdict
 from flask_cors import CORS
 
-from flask import Flask, render_template, request, session
+from flask import Flask, request, session
 import os
 import secrets
 
