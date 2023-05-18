@@ -1,6 +1,6 @@
 import random
 from collections import defaultdict
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 from flask import Flask, request, session
 import os
@@ -19,12 +19,13 @@ message_history = defaultdict(list)
 question_history = defaultdict(list)
 
 
-
+@cross_origin()
 @app.route('/')
 def index():
     return app.send_static_file('index.html')
 
 
+@cross_origin()
 @app.route("/answer")
 def answer():
     set_session_if_needed()
