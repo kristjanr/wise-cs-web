@@ -1,6 +1,7 @@
 import random
 from collections import defaultdict
 from flask_cors import CORS, cross_origin
+import psycopg2
 
 from flask import Flask, request, session
 import os
@@ -58,4 +59,3 @@ if __name__ == '__main__':
 # Add a feedback button to the UI & save the feedback to DB with the question and answer
 # Add a token counter and warn the user when they are running out of tokens & ask to reset the session
 # Test if multithreading works with sessions etc
-# Improve CSS

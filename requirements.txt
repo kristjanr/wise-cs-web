@@ -9,3 +9,4 @@ openai
 tiktoken
 numpy
 flask-cors
+psycopg2
