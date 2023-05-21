@@ -2,10 +2,10 @@
 
 # Build and deploy the backend
 cd backend
-heroku git:remote -a wise-cs
+heroku create --remote backend
 git push backend master
 
 # Build and deploy the frontend
 cd ../frontend
-heroku git:remote -a wise-cs-frontend
+heroku create --remote frontend
 git push frontend master
