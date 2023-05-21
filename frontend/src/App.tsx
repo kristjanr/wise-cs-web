@@ -113,7 +113,7 @@ const Chatbot = () => {
                                     {message.text.type === 'text' && message.text.data}
                                     {message.text.type === 'links' && (
                                         <>
-                                            <div>These help artasdasicles were used to answer your question:</div>
+                                            <div>These help articles were used to answer your question:</div>
                                             {message.text.data.map((url, index) => (<>
                                                     <a key={index} href={url} target="_blank" rel="noopener noreferrer">{url}</a><br/>
                                                 </>

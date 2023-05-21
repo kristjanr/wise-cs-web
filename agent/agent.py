@@ -1,6 +1,6 @@
 import time
 from os import environ
-from backend.agent.similar_articles import get_most_similar_articles_up_to_n_tokens, MODEL
+from agent.similar_articles import get_most_similar_articles_up_to_n_tokens, MODEL
 import json
 import openai
 import logging
