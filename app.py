@@ -12,8 +12,8 @@ import secrets
 
 from agent.agent import respond
 
-app = Flask(__name__, static_folder="./frontend/build", static_url_path="/")
-origins = ["http://localhost:5001", "https://wise-cs.herokuapp.com"]
+app = Flask(__name__)
+origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com"]
 CORS(app, origins=origins)
 
 secret_key = secrets.token_hex(16)
@@ -21,13 +21,6 @@ app.config['SECRET_KEY'] = secret_key
 
 message_history = defaultdict(list)
 question_history = defaultdict(list)
-
-
-@cross_origin()
-@app.route('/')
-def index():
-    set_session_if_needed()
-    return app.send_static_file('index.html')
 
 
 if 'DATABASE_URL' not in os.environ:
