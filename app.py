@@ -23,13 +23,6 @@ message_history = defaultdict(list)
 question_history = defaultdict(list)
 
 
-@cross_origin()
-@app.route('/')
-def index():
-    set_session_if_needed()
-    return app.send_static_file('index.html')
-
-
 if 'DATABASE_URL' not in os.environ:
     raise Exception('DATABASE_URL environment variable not set')
 # Parse the Heroku DATABASE_URL
@@ -90,10 +83,12 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
     app.run(debug=True, port=port)
 
-# TODO: when session exists, load the previous messages and questions - this needs saving them to DB
-# Save all questions and answers to DB for later analysis
-# Add a feedback button to the UI & save the feedback to DB with the question and answer
-# Add a token counter and warn the user when they are running out of tokens & ask to reset the session
+# TODO:
 # Test if multithreading works with sessions etc
-# Copy from bing - notify when context window gets full and recommend to reset session
-# Add a feedback modal to the UI - thumbs up, neutral, thumbs down, plus a text field for comments.
+# Copy from bing - notify when context window gets full and recommend to reset session. Add a token counter and warn the user when they are running out of tokens & ask to reset the session
+# Add a feedback modal to the UI - thumbs up, neutral, thumbs down, plus a text field for comments. Add a feedback button to the UI & save the feedback to DB with the question and answer
+# Improve saving all questions and answers to DB for later analysis!!
+# Scrape wise twitter and fb for cst questions
+# Create a test set of questions and answers
+# Convert to backend to typescript?
+
