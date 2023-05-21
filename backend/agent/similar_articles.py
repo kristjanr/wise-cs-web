@@ -1,8 +1,6 @@
-from typing import List, Tuple
-
 import openai
 
-from agent import index, article_embeddings
+from backend.agent import index, article_embeddings
 import numpy as np
 import tiktoken
 
