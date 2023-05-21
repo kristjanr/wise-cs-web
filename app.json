@@ -1,0 +1,20 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "postdeploy": "bash postdeploy.sh"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "environments": {
+    "review": {
+      "formation": {
+        "web": {
+          "quantity": 1
+        }
+      }
+    }
+  }
+}
