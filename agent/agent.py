@@ -16,7 +16,7 @@ Do not ask any account or transaction details, except those which would help fin
 '''
 
 
-def respond(question: str, previous_messages=[], previous_questions=[]):
+def respond(question: str, previous_messages=[], previous_questions=[]) -> (str, list, list):
     start_time_context = time.time()
     context, urls = get_relevant_context_to_answer_questions(previous_questions, question)
     end_time_context = time.time()

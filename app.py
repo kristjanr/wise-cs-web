@@ -14,14 +14,13 @@ from agent.agent import respond
 
 app = Flask(__name__)
 origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com"]
-CORS(app, origins=origins)
+CORS(app, origins=origins, supports_credentials=True)
 
 secret_key = secrets.token_hex(16)
 app.config['SECRET_KEY'] = secret_key
 
 message_history = defaultdict(list)
 question_history = defaultdict(list)
-
 
 if 'DATABASE_URL' not in os.environ:
     raise Exception('DATABASE_URL environment variable not set')
@@ -43,27 +42,62 @@ def answer():
     set_session_if_needed()
     session_id = session['ID']
     question = request.args.get('question')
-    previous_messages = message_history[session_id]
-    previous_questions = question_history[session_id]
+    previous_messages = get_previous_messages(session_id)
+    previous_questions = get_previous_questions(session_id)
 
     llm_answer, urls, new_messages = respond(question, previous_messages, previous_questions)
 
-    save_to_database(session_id, question, llm_answer, urls)
+    questions = previous_questions.copy()
+    questions.append(question)
 
-    message_history[session_id].extend(new_messages)
-    question_history[session_id].append(question)
+    messages = previous_messages.copy()
+    messages.extend(new_messages)
+
+    save_to_database(session_id, question, llm_answer, urls, messages, questions)
 
     print(f'Question: {question}, Answer: {llm_answer}, Articles used: {"/n".join(urls)}"')
     return dict(answer=llm_answer, urls_used=urls)
 
 
-def save_to_database(session_id, question, llm_answer, urls):
-    insert_query = '''
-        INSERT INTO session_history (session_id, question, llm_answer, urls)
-        VALUES (%s, %s, %s, %s)
+def get_previous_questions(session_id: str) -> list:
+    select_query = '''
+        SELECT questions FROM session_history
+        WHERE session_id = %s
+        ORDER BY created_at DESC
+        LIMIT 1
     '''
     with conn.cursor() as cursor:
-        cursor.execute(insert_query, (session_id, question, llm_answer, json.dumps(urls)))
+        cursor.execute(select_query, (session_id,))
+        result = cursor.fetchone()
+        if result is None:
+            return []
+        else:
+            return result[0]
+
+
+def get_previous_messages(session_id):
+    select_query = '''
+        SELECT messages FROM session_history
+        WHERE session_id = %s
+        ORDER BY created_at DESC
+        LIMIT 1
+    '''
+    with conn.cursor() as cursor:
+        cursor.execute(select_query, (session_id,))
+        result = cursor.fetchone()
+        if result is None:
+            return []
+        else:
+            return result[0]
+
+
+def save_to_database(session_id, question, llm_answer, urls, messages, questions):
+    insert_query = '''
+        INSERT INTO session_history (session_id, question, llm_answer, urls, messages, questions)
+        VALUES (%s, %s, %s, %s, %s, %s)
+    '''
+    with conn.cursor() as cursor:
+        cursor.execute(insert_query, (session_id, question, llm_answer, json.dumps(urls), json.dumps(messages), json.dumps(questions)))
         conn.commit()
 
 
@@ -84,7 +118,6 @@ if __name__ == '__main__':
     app.run(debug=True, port=port)
 
 # TODO: when session exists, load the previous messages and questions - this needs saving them to DB
-# Save all questions and answers to DB for later analysis
 # Add a feedback button to the UI & save the feedback to DB with the question and answer
 # Add a token counter and warn the user when they are running out of tokens & ask to reset the session
 # Test if multithreading works with sessions etc
