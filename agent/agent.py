@@ -1,12 +1,14 @@
 import time
 from os import environ
+
+import tiktoken
+
 from agent.similar_articles import get_most_similar_articles_up_to_n_tokens, MODEL
 import json
 import openai
 import logging
 
 openai.api_key = environ.get('OPENAI_API_KEY')
-
 
 PROMPT = '''You are a customer support agent at Wise, the money transfer company. Your job is to answer the customer by using only the info provided here. You will get a customer's question on one 
 line, with the prefix "CUSTOMER: "
@@ -58,7 +60,20 @@ def build_new_messages(question, context, previous_messages_exist):
     return new_messages
 
 
+MODEL = "gpt-3.5-turbo"
+tokenizer = tiktoken.encoding_for_model(MODEL)
+
+
 def fetch_llm_answer(new_messages, previous_messages):
+    previous_messages_tokens = []
+    for message in previous_messages:
+        try:
+            previous_messages_tokens.append(len(tokenizer.encode(message['content'])))
+        except TypeError:
+            logging.error(f'Could not encode message: {message}')
+    if sum(previous_messages_tokens) > 1500:
+        logging.info(f'Previous messages too long, removing first two messages')
+        previous_messages = []
     # prompt_messages = remove_big_messages(previous_messages)
     prompt_messages = previous_messages
     prompt_messages.extend(new_messages)
@@ -72,4 +87,5 @@ def fetch_llm_answer(new_messages, previous_messages):
 
 
 def remove_big_messages(previous_messages):
-    return list(filter(lambda m: not (m['role'] == 'system' and m['content'].startswith('CONTEXT: \n')), previous_messages))
+    return list(
+        filter(lambda m: not (m['role'] == 'system' and m['content'].startswith('CONTEXT: \n')), previous_messages))

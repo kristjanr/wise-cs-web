@@ -9,4 +9,6 @@ openai
 tiktoken
 numpy
 flask-cors
-psycopg2
+python-dotenv
+psycopg2-binary
+sqlalchemy

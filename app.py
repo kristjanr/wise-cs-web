@@ -11,6 +11,8 @@ import os
 import secrets
 
 from agent.agent import respond
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com"]
@@ -112,10 +114,6 @@ def set_session_if_needed():
     print("ID oli olemas")
     print(session['ID'])
 
-
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5001))
-    app.run(debug=True, port=port)
 
 # TODO: when session exists, load the previous messages and questions - this needs saving them to DB
 # Add a feedback button to the UI & save the feedback to DB with the question and answer
