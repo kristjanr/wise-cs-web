@@ -11,20 +11,34 @@ import logging
 openai.api_key = environ.get('OPENAI_API_KEY')
 
 PROMPT = '''You are a customer support agent at Wise, the money transfer company. Your job is to answer the customer by using only the info provided here. You will get a customer's question on one 
-line, with the prefix "CUSTOMER: "
-On the rest of the lines, you will get relevant information to answer the question. It starts with the prefix "CONTEXT: ".
-Behave like you are the source of the information, while drawing answers only from the info provided. If your are unable to answer the question using the provided context, say 'I don't know'.
+line, with the prefix "QUESTION: "
+The rest will be relevant information to answer the question. It starts with the prefix "CONTEXT: ".
+Answer the question like you are the source of the information, a knowledgeable customer support associate, while drawing answers only from the context provided. If your are unable to answer the question using the provided context, say 'I don't know'.
 Do not ask any account or transaction details, except those which would help finding the answer from the context provided.
+If you need to ask for more information, say 'I need more information'.
 '''
 
 
-def respond(question: str, previous_messages=[], previous_questions=[]) -> (str, list, list):
+def get_number_of_tokens_used(previous_messages, new_messages):
+    tokens_used = []
+    for message in previous_messages + new_messages:
+        try:
+            tokens_used.append(len(tokenizer.encode(message['content'])))
+        except TypeError:
+            logging.error(f'Could not encode message: {message}')
+    print(f'Tokens used: {sum(tokens_used)}')
+    return sum(tokens_used)
+
+
+def respond(question: str, previous_messages, previous_questions) -> (str, list, list):
     start_time_context = time.time()
     context, urls = get_relevant_context_to_answer_questions(previous_questions, question)
     end_time_context = time.time()
     context_time = end_time_context - start_time_context
 
     new_messages = build_new_messages(question, context, bool(previous_messages))
+    tokens_used = get_number_of_tokens_used(previous_messages, new_messages)
+
 
     start_time_llm = time.time()
     llm_answer = fetch_llm_answer(new_messages, previous_messages)
@@ -36,7 +50,7 @@ def respond(question: str, previous_messages=[], previous_questions=[]) -> (str,
     logging.info(f'Context generation time: {context_time} seconds')
     logging.info(f'LLM answer generation time: {llm_time} seconds')
 
-    return llm_answer, urls, new_messages
+    return llm_answer, urls, new_messages, tokens_used
 
 
 def get_relevant_context_to_answer_questions(previous_questions, question):
@@ -65,15 +79,6 @@ tokenizer = tiktoken.encoding_for_model(MODEL)
 
 
 def fetch_llm_answer(new_messages, previous_messages):
-    previous_messages_tokens = []
-    for message in previous_messages:
-        try:
-            previous_messages_tokens.append(len(tokenizer.encode(message['content'])))
-        except TypeError:
-            logging.error(f'Could not encode message: {message}')
-    if sum(previous_messages_tokens) > 1500:
-        logging.info(f'Previous messages too long, removing first two messages')
-        previous_messages = []
     # prompt_messages = remove_big_messages(previous_messages)
     prompt_messages = previous_messages
     prompt_messages.extend(new_messages)

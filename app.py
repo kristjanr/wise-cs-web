@@ -5,7 +5,7 @@ from collections import defaultdict
 from flask_cors import CORS, cross_origin
 import psycopg2
 import json
-
+import openai
 from flask import Flask, request, session, make_response
 import os
 import secrets
@@ -37,17 +37,31 @@ conn = psycopg2.connect(
     password=url.password
 )
 
+@cross_origin()
+@app.route('/logout')
+def logout():
+    resp = make_response("Cookie Removed")
+    resp.set_cookie('session_id', '', expires=0)
+    return resp
 
 @cross_origin()
 @app.route("/answer")
 def answer():
-    set_session_if_needed()
+    session_existed_already = set_session_if_needed()
     session_id = session['ID']
     question = request.args.get('question')
-    previous_messages = get_previous_messages(session_id)
-    previous_questions = get_previous_questions(session_id)
+    previous_messages = []
+    previous_questions = []
+    if session_existed_already:
+        previous_messages = get_previous_messages(session_id)
+        previous_questions = get_previous_questions(session_id)
 
-    llm_answer, urls, new_messages = respond(question, previous_messages, previous_questions)
+    try:
+        llm_answer, urls, new_messages, n_tokens_used = respond(question, previous_messages, previous_questions)
+    except openai.error.InvalidRequestError as e:
+        n_tokens_used = e.user_message.split('your messages resulted in ')[1].split(' tokens')[0]
+        return dict(answer='Context window full. Please reset session!', urls_used=[], n_tokens_used=n_tokens_used)
+
 
     questions = previous_questions.copy()
     questions.append(question)
@@ -58,7 +72,7 @@ def answer():
     save_to_database(session_id, question, llm_answer, urls, messages, questions)
 
     print(f'Question: {question}, Answer: {llm_answer}, Articles used: {"/n".join(urls)}"')
-    return dict(answer=llm_answer, urls_used=urls)
+    return dict(answer=llm_answer, urls_used=urls, n_tokens_used=n_tokens_used)
 
 
 def get_previous_questions(session_id: str) -> list:
@@ -110,9 +124,10 @@ def set_session_if_needed():
         expiry_date = datetime.datetime.now() + datetime.timedelta(days=1)
         response = make_response()
         response.set_cookie("session_id", session["ID"], expires=expiry_date)
-        return
+        return False
     print("ID oli olemas")
     print(session['ID'])
+    return True
 
 
 # TODO: when session exists, load the previous messages and questions - this needs saving them to DB
