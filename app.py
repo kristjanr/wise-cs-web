@@ -12,9 +12,20 @@ import secrets
 
 from agent.agent import respond
 from dotenv import load_dotenv
+
 load_dotenv()
 
 app = Flask(__name__)
+
+if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
+    print('Using development config')
+else:
+    app.config.update(
+        SESSION_COOKIE_SECURE=True,
+        SESSION_COOKIE_SAMESITE='None',
+    )
+    print('Using production config')
+
 origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com"]
 CORS(app, origins=origins, supports_credentials=True)
 
@@ -36,6 +47,7 @@ conn = psycopg2.connect(
     user=url.username,
     password=url.password
 )
+
 
 @cross_origin()
 @app.route('/feedback', methods=['POST'])
@@ -66,12 +78,15 @@ def feedback():
         cursor.execute(update_query, (is_good_feedback, feedback, row_id))
         conn.commit()
     return 'Success', 200
+
+
 @cross_origin()
 @app.route('/logout')
 def logout():
     resp = make_response("Cookie Removed")
-    resp.set_cookie('session_id', '', expires=0)
+    resp.set_cookie('session', '', expires=0)
     return resp
+
 
 @cross_origin()
 @app.route("/answer")
@@ -91,7 +106,8 @@ def answer():
         n_tokens_used = e.user_message.split('your messages resulted in ')[1].split(' tokens')[0]
         return dict(answer='Context window full. Please reset session!', urls_used=[], n_tokens_used=n_tokens_used)
     except openai.error.ServiceUnavailableError as e:
-        return dict(answer='OpenAI API is currently unavailable. Please try again later.', urls_used=[], n_tokens_used=0)
+        return dict(answer='OpenAI API is currently unavailable. Please try again later.', urls_used=[],
+                    n_tokens_used=0)
 
     questions = previous_questions.copy()
     questions.append(question)
@@ -144,7 +160,8 @@ def save_to_database(session_id, question, llm_answer, urls, messages, questions
         RETURNING id
     '''
     with conn.cursor() as cursor:
-        cursor.execute(insert_query, (session_id, question, llm_answer, json.dumps(urls), json.dumps(messages), json.dumps(questions)))
+        cursor.execute(insert_query, (
+            session_id, question, llm_answer, json.dumps(urls), json.dumps(messages), json.dumps(questions)))
         row = cursor.fetchone()
         if row:
             row_id = row[0]
@@ -169,7 +186,6 @@ def set_session_if_needed():
     print("ID oli olemas")
     print(session['ID'])
     return True
-
 
 # TODO: when session exists, load the previous messages and questions - this needs saving them to DB
 # Add a feedback button to the UI & save the feedback to DB with the question and answer
