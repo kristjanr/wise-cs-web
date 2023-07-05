@@ -23,7 +23,7 @@ else:
     app.config.update(
         SESSION_COOKIE_SECURE=True,
         SESSION_COOKIE_SAMESITE='None',
-        SESSION_COOKIE_DOMAIN='.wise-ai-help.herokuapp.com'
+        SESSION_COOKIE_DOMAIN='wise-cs.herokuapp.com'
     )
     print('Using production config')
 
