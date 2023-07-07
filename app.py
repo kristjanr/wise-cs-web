@@ -27,7 +27,7 @@ else:
     )
     print('Using production config')
 
-origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com", "https://qryys7e88c.execute-api.eu-north-1.amazonaws.com/api"]
+origins = ["http://localhost:3000/", "https://wise-ai-help.herokuapp.com", "https://qryys7e88c.execute-api.eu-north-1.amazonaws.com/api"]
 CORS(app, origins=origins, supports_credentials=True)
 
 secret_key = secrets.token_hex(16)
