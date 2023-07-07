@@ -84,6 +84,7 @@ def feedback():
 @app.route('/login')
 def index():
     print('Logging in')
+    print("Session id: " + session.get('sessionId', "None"))
     session['sessionId'] = session.get('sessionId', str(uuid.uuid4()))
     return 'Logged in'
 
