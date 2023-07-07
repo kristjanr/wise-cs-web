@@ -53,10 +53,9 @@ conn = psycopg2.connect(
 @cross_origin()
 @app.route('/feedback', methods=['POST'])
 def feedback():
-    session_existed_already = set_session_if_needed()
-    if not session_existed_already:
+    session_id = session.get('sessionId')
+    if not session_id:
         return 'No session exists', 400
-    session_id = session['ID']
     request_data = request.get_json()
     row_id = request_data['messageId']
     select_query = '''
@@ -78,26 +77,34 @@ def feedback():
     with conn.cursor() as cursor:
         cursor.execute(update_query, (is_good_feedback, feedback, row_id))
         conn.commit()
-    return 'Success', 200
+    return 'Feedback saved'
 
 
 @cross_origin()
-@app.route('/logout')
+@app.route('/login')
+def index():
+    print('Logging in')
+    session['sessionId'] = session.get('sessionId', str(uuid.uuid4()))
+    return 'Logged in'
+
+
+@cross_origin()
+@app.route('/reset-session')
 def logout():
-    resp = make_response("Cookie Removed")
-    resp.set_cookie('session', '', expires=0)
-    return resp
+    print('Session reset')
+    session['sessionId'] = str(uuid.uuid4())
+    return 'Session reset'
 
 
 @cross_origin()
 @app.route("/answer")
 def answer():
-    session_existed_already = set_session_if_needed()
-    session_id = session['ID']
+    session_id = session.get('sessionId')
     question = request.args.get('question')
     previous_messages = []
     previous_questions = []
-    if session_existed_already:
+    if session_id:
+        print(f'Using session {session_id}')
         previous_messages = get_previous_messages(session_id)
         previous_questions = get_previous_questions(session_id)
 
@@ -174,21 +181,6 @@ def save_to_database(session_id, question, llm_answer, urls, messages, questions
             print('Failed to retrieve the inserted row ID.')
             conn.rollback()
             return None
-
-
-def set_session_if_needed():
-    print("Checking if session exists")
-    print(session)
-    if session.get('ID') is None:
-        print("ID puudus")
-        session['ID'] = str(uuid.uuid4())
-        expiry_date = datetime.datetime.now() + datetime.timedelta(days=1)
-        response = make_response()
-        response.set_cookie("session", session["ID"], expires=expiry_date)
-        return False
-    print("ID oli olemas")
-    print(session['ID'])
-    return True
 
 # TODO: when session exists, load the previous messages and questions - this needs saving them to DB
 # Add a feedback button to the UI & save the feedback to DB with the question and answer
