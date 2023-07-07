@@ -17,6 +17,16 @@ load_dotenv()
 
 app = Flask(__name__)
 
+if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
+    print('Using development config')
+else:
+    app.config.update(
+        SESSION_COOKIE_SECURE=True,
+        REMEMBER_COOKIE_SECURE=True,
+        SESSION_COOKIE_SAMESITE='None',
+    )
+    print('Using production config')
+
 origins = ["http://localhost:3000", "https://wise-help-ai.roosild.ee"]
 CORS(app, origins=origins, supports_credentials=True)
 
