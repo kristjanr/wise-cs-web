@@ -23,11 +23,11 @@ else:
     app.config.update(
         SESSION_COOKIE_SECURE=True,
         SESSION_COOKIE_SAMESITE='None',
-        SESSION_COOKIE_DOMAIN='qryys7e88c.execute-api.eu-north-1.amazonaws.com'
+        SESSION_COOKIE_DOMAIN='wise-help-ai.roosild.ee'
     )
     print('Using production config')
 
-origins = ["http://localhost:3000/", "https://wise-ai-help.herokuapp.com", "https://qryys7e88c.execute-api.eu-north-1.amazonaws.com"]
+origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com", "wise-help-ai.roosild.ee"]
 CORS(app, origins=origins, supports_credentials=True)
 
 secret_key = secrets.token_hex(16)
