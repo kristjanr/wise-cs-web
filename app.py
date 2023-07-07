@@ -23,7 +23,7 @@ else:
     app.config.update(
         SESSION_COOKIE_SECURE=True,
         SESSION_COOKIE_SAMESITE='None',
-        SESSION_COOKIE_DOMAIN='*.roosild.ee'
+        SESSION_COOKIE_DOMAIN='wise-help-ai.roosild.ee'
     )
     print('Using production config')
 
