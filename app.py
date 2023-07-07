@@ -184,7 +184,7 @@ def set_session_if_needed():
         session['ID'] = str(uuid.uuid4())
         expiry_date = datetime.datetime.now() + datetime.timedelta(days=1)
         response = make_response()
-        response.set_cookie("session_id", session["ID"], expires=expiry_date)
+        response.set_cookie("session", session["ID"], expires=expiry_date)
         return False
     print("ID oli olemas")
     print(session['ID'])
