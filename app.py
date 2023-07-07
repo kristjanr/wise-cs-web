@@ -27,7 +27,7 @@ else:
     )
     print('Using production config')
 
-origins = ["http://localhost:3000", "https://wise-ai-help.herokuapp.com", "wise-help-ai.roosild.ee"]
+origins = ["http://localhost:3000", "https://wise-help-ai.roosild.ee"]
 CORS(app, origins=origins, supports_credentials=True)
 
 secret_key = secrets.token_hex(16)
