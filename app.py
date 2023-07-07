@@ -23,7 +23,7 @@ else:
     app.config.update(
         SESSION_COOKIE_SECURE=True,
         SESSION_COOKIE_SAMESITE='None',
-        SESSION_COOKIE_DOMAIN='wise-help-ai.roosild.ee'
+        SESSION_COOKIE_DOMAIN='roosild.ee'
     )
     print('Using production config')
 
@@ -177,6 +177,8 @@ def save_to_database(session_id, question, llm_answer, urls, messages, questions
 
 
 def set_session_if_needed():
+    print("Checking if session exists")
+    print(session)
     if session.get('ID') is None:
         print("ID puudus")
         session['ID'] = str(uuid.uuid4())
