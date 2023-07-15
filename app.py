@@ -54,11 +54,15 @@ def static_file(path):
     return app.send_static_file(path)
 
 
+SESSION_KEY = 'sessionId'
+
+
 @app.route('/feedback', methods=['POST'])
 def feedback():
-    session_id = session.get('sessionId')
+    session_id = session.get(SESSION_KEY)
     if not session_id:
         return 'No session exists', 400
+    print(f'Session: {session.get(SESSION_KEY)}')
     request_data = request.get_json()
     row_id = request_data['messageId']
     select_query = '''
@@ -86,21 +90,21 @@ def feedback():
 @app.route('/login')
 def index():
     print('Logging in')
-    print(f'Session: {session.get("sessionId")}')
-    session['sessionId'] = session.get('sessionId', str(uuid.uuid4()))
+    print(f'Session: {session.get(SESSION_KEY)}')
+    session[SESSION_KEY] = session.get(SESSION_KEY, str(uuid.uuid4()))
     return 'Logged in'
 
 
 @app.route('/reset-session')
 def logout():
     print('Session reset')
-    session['sessionId'] = str(uuid.uuid4())
+    session[SESSION_KEY] = str(uuid.uuid4())
     return 'Session reset'
 
 
-@app.route("/answer")
+@app.route('/answer')
 def answer():
-    session_id = session.get('sessionId')
+    session_id = session.get(SESSION_KEY)
     question = request.args.get('question')
     previous_messages = []
     previous_questions = []
