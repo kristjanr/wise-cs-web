@@ -8,7 +8,6 @@ Werkzeug
 openai
 tiktoken
 numpy
-flask-cors
 python-dotenv
 psycopg2-binary
 sqlalchemy

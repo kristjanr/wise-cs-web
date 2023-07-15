@@ -1,34 +1,20 @@
-import datetime
+import json
+import os
+import secrets
 import urllib
 import uuid
 from collections import defaultdict
-from flask_cors import CORS, cross_origin
-import psycopg2
-import json
+
 import openai
-from flask import Flask, request, session, make_response
-import os
-import secrets
+import psycopg2
+from dotenv import load_dotenv
+from flask import Flask, request, session, send_from_directory
 
 from agent.agent import respond
-from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__)
-
-if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
-    print('Using development config')
-else:
-    app.config.update(
-        SESSION_COOKIE_SECURE=True,
-        REMEMBER_COOKIE_SECURE=True,
-        SESSION_COOKIE_SAMESITE='None',
-    )
-    print('Using production config')
-
-origins = ["http://localhost:3000", "https://wise-help-ai.roosild.ee"]
-CORS(app, origins=origins, supports_credentials=True)
+app = Flask(__name__, static_folder='static')
 
 secret_key = secrets.token_hex(16)
 app.config['SECRET_KEY'] = secret_key
@@ -38,7 +24,6 @@ question_history = defaultdict(list)
 
 if 'DATABASE_URL' not in os.environ:
     raise Exception('DATABASE_URL environment variable not set')
-# Parse the Heroku DATABASE_URL
 url = urllib.parse.urlparse(os.environ['DATABASE_URL'])
 
 # Set up connection to PostgreSQL database
@@ -50,7 +35,16 @@ conn = psycopg2.connect(
 )
 
 
-@cross_origin()
+@app.route('/')
+def serve():
+    return send_from_directory('static', 'index.html')
+
+
+@app.route('/<path:path>')
+def static_file(path):
+    return app.send_static_file(path)
+
+
 @app.route('/feedback', methods=['POST'])
 def feedback():
     session_id = session.get('sessionId')
@@ -80,16 +74,14 @@ def feedback():
     return 'Feedback saved'
 
 
-@cross_origin()
 @app.route('/login')
 def index():
     print('Logging in')
-    print("Session id: " + session.get('sessionId', "None"))
+    print("Session id")
     session['sessionId'] = session.get('sessionId', str(uuid.uuid4()))
     return 'Logged in'
 
 
-@cross_origin()
 @app.route('/reset-session')
 def logout():
     print('Session reset')
@@ -97,7 +89,6 @@ def logout():
     return 'Session reset'
 
 
-@cross_origin()
 @app.route("/answer")
 def answer():
     session_id = session.get('sessionId')
@@ -182,10 +173,3 @@ def save_to_database(session_id, question, llm_answer, urls, messages, questions
             print('Failed to retrieve the inserted row ID.')
             conn.rollback()
             return None
-
-# TODO: when session exists, load the previous messages and questions - this needs saving them to DB
-# Add a feedback button to the UI & save the feedback to DB with the question and answer
-# Add a token counter and warn the user when they are running out of tokens & ask to reset the session
-# Test if multithreading works with sessions etc
-# Copy from bing - notify when context window gets full and recommend to reset session
-# Add a feedback modal to the UI - thumbs up, neutral, thumbs down, plus a text field for comments.
