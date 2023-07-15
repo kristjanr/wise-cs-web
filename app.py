@@ -16,6 +16,15 @@ load_dotenv()
 
 app = Flask(__name__, static_folder='static')
 
+if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
+    print('Using development config')
+else:
+    app.config.update(
+        SESSION_COOKIE_SECURE=True,
+        REMEMBER_COOKIE_SECURE=True,
+    )
+    print('Using production config')
+
 secret_key = secrets.token_hex(16)
 app.config['SECRET_KEY'] = secret_key
 
@@ -77,7 +86,7 @@ def feedback():
 @app.route('/login')
 def index():
     print('Logging in')
-    print("Session id")
+    print(f'Session: {session.get("sessionId")}')
     session['sessionId'] = session.get('sessionId', str(uuid.uuid4()))
     return 'Logged in'
 
@@ -96,7 +105,7 @@ def answer():
     previous_messages = []
     previous_questions = []
     if session_id:
-        print(f'Using session {session_id}')
+        print(f'Using existing session {session_id}')
         previous_messages = get_previous_messages(session_id)
         previous_questions = get_previous_questions(session_id)
 
