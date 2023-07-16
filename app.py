@@ -62,18 +62,19 @@ def feedback():
     session_id = session.get(SESSION_KEY)
     if not session_id:
         return 'No session exists', 400
+
     print(f'Session: {session.get(SESSION_KEY)}')
     request_data = request.get_json()
     row_id = request_data['messageId']
     select_query = '''
-        SELECT session_id FROM session_history
+        SELECT true FROM session_history
         WHERE id = %s AND session_id = %s AND is_good_feedback IS NULL
     '''
     with conn.cursor() as cursor:
         cursor.execute(select_query, (row_id, session_id))
-        result = cursor.fetchone()
-        if result is None:
+        if not cursor.fetchone():
             return 'Invalid messageId', 400
+
     is_good_feedback = request_data['feedback'] == 'good'
     feedback = request_data['additionalFeedback']
     update_query = '''
@@ -84,7 +85,7 @@ def feedback():
     with conn.cursor() as cursor:
         cursor.execute(update_query, (is_good_feedback, feedback, row_id))
         conn.commit()
-    return 'Feedback saved'
+    return dict(success=True, data=request.get_json())
 
 
 @app.route('/login')
@@ -97,8 +98,8 @@ def index():
 
 @app.route('/reset-session')
 def logout():
-    print('Session reset')
     session[SESSION_KEY] = str(uuid.uuid4())
+    print(f'Session reset: {session[SESSION_KEY]}')
     return 'Session reset'
 
 
