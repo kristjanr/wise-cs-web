@@ -17,6 +17,7 @@ from agent.agent import respond
 load_dotenv()
 
 app = Flask(__name__, static_folder='static')
+app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 
 if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
     print('Using development config')
@@ -30,8 +31,6 @@ else:
     )
     print('Using production config')
 
-secret_key = secrets.token_hex(16)
-app.config['SECRET_KEY'] = secret_key
 
 message_history = defaultdict(list)
 question_history = defaultdict(list)
