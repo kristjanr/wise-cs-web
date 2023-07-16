@@ -38,10 +38,11 @@ def respond(question: str, previous_messages, previous_questions) -> (str, list,
     context_time = end_time_context - start_time_context
 
     new_messages = build_new_messages(question, context, bool(previous_messages))
-    tokens_used = get_number_of_tokens_used(previous_messages, new_messages)
+    prompt_messages = remove_big_messages(previous_messages)
+    tokens_used = get_number_of_tokens_used(prompt_messages, new_messages)
 
     start_time_llm = time.time()
-    llm_answer = fetch_llm_answer(new_messages, previous_messages)
+    llm_answer = fetch_llm_answer(new_messages, prompt_messages)
     end_time_llm = time.time()
     llm_time = end_time_llm - start_time_llm
 
@@ -80,7 +81,6 @@ tokenizer = tiktoken.encoding_for_model(MODEL)
 
 
 def fetch_llm_answer(new_messages, previous_messages):
-    # prompt_messages = remove_big_messages(previous_messages)
     prompt_messages = previous_messages
     prompt_messages.extend(new_messages)
     print(f'First 200 chars of messages sent to LLM: {[json.dumps(m)[:200] for m in prompt_messages]}')
@@ -92,6 +92,7 @@ def fetch_llm_answer(new_messages, previous_messages):
     return reply
 
 
-def remove_big_messages(previous_messages):
-    return list(
-        filter(lambda m: not (m['role'] == 'system' and m['content'].startswith('CONTEXT: \n')), previous_messages))
+def remove_big_messages(before):
+    after = list(filter(lambda m: (m['role'] != 'system' or not m['content'].startswith('CONTEXT: \n')), before))
+    print(f'Removed {len(before) - len(after)} big messages')
+    return after
