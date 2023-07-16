@@ -1,12 +1,13 @@
+import datetime
+import json
+import logging
 import time
 from os import environ
 
+import openai
 import tiktoken
 
 from agent.similar_articles import get_most_similar_articles_up_to_n_tokens, MODEL
-import json
-import openai
-import logging
 
 openai.api_key = environ.get('OPENAI_API_KEY')
 
@@ -39,7 +40,6 @@ def respond(question: str, previous_messages, previous_questions) -> (str, list,
     new_messages = build_new_messages(question, context, bool(previous_messages))
     tokens_used = get_number_of_tokens_used(previous_messages, new_messages)
 
-
     start_time_llm = time.time()
     llm_answer = fetch_llm_answer(new_messages, previous_messages)
     end_time_llm = time.time()
@@ -61,6 +61,7 @@ def get_relevant_context_to_answer_questions(previous_questions, question):
 
 
 def build_new_messages(question, context, previous_messages_exist):
+    dateprompt = f' The current date is {datetime.date.today()}'
     if not previous_messages_exist:
         new_messages = [{"role": "system", "content": PROMPT}, ]
     else:
@@ -68,13 +69,13 @@ def build_new_messages(question, context, previous_messages_exist):
     new_messages.extend(
         [
             {"role": "user", "content": 'CUSTOMER:  \n' + question},
-            {"role": "system", "content": 'CONTEXT: \n' + context}
+            {"role": "system", "content": 'CONTEXT: \n' + context + dateprompt}
         ]
     )
     return new_messages
 
 
-MODEL = "gpt-3.5-turbo"
+MODEL = "gpt-4"
 tokenizer = tiktoken.encoding_for_model(MODEL)
 
 
