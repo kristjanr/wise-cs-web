@@ -17,7 +17,9 @@ from agent.agent import respond
 load_dotenv()
 
 app = Flask(__name__, static_folder='static')
-app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+if app.config['SECRET_KEY']:
+    print('Secret was set!')
 
 if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
     print('Using development config')
@@ -63,6 +65,7 @@ SESSION_KEY = 'sessionId'
 
 @app.route('/feedback', methods=['POST'])
 def feedback():
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     session_id = session.get(SESSION_KEY)
     if not session_id:
         return 'No session exists', 400
@@ -94,6 +97,7 @@ def feedback():
 
 @app.route('/login')
 def index():
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     print('Logging in')
     print(f'Session: {session.get(SESSION_KEY)}')
     session[SESSION_KEY] = session.get(SESSION_KEY, str(uuid.uuid4()))
@@ -102,6 +106,7 @@ def index():
 
 @app.route('/reset-session')
 def logout():
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     session[SESSION_KEY] = str(uuid.uuid4())
     print(f'Session reset: {session[SESSION_KEY]}')
     return 'Session reset'
@@ -109,6 +114,7 @@ def logout():
 
 @app.route('/answer')
 def answer():
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     session_id = session.get(SESSION_KEY)
     question = request.args.get('question')
     previous_messages = []
