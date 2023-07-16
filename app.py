@@ -17,7 +17,8 @@ load_dotenv()
 app = Flask(__name__, static_folder='static')
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = redis.from_url(os.environ['REDIS_URL'])
+r = redis.from_url(os.environ['REDIS_URL'])
+app.config['SESSION_REDIS'] = r
 Session(app)
 
 if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
@@ -89,16 +90,23 @@ def feedback():
 
 @app.route('/login', methods=['POST'])
 def login():
+    key = session.get(SESSION_KEY)
+    n_tokens_used = 0
+    if key:
+        n_tokens_used = r.get(f'n_tokens_used-{session[SESSION_KEY]}') or 0
+        if n_tokens_used:
+            n_tokens_used = int(n_tokens_used)
     print('Logging in')
-    print(f'Session: {session.get(SESSION_KEY)}')
+    print(f'Session: {key}')
     session[SESSION_KEY] = session.get(SESSION_KEY, str(uuid.uuid4()))
-    return 'Logged in'
+    return dict(n_tokens_used=n_tokens_used)
 
 
-@app.route('/reset-session')
+@app.route('/reset-session', methods=['POST'])
 def logout():
     session[SESSION_KEY] = str(uuid.uuid4())
     print(f'Session reset: {session[SESSION_KEY]}')
+    r.set(f'n_tokens_used-{session[SESSION_KEY]}', 0)
     return 'Session reset'
 
 
@@ -131,6 +139,7 @@ def answer():
     row_id = save_to_database(session_id, question, llm_answer, urls, messages, questions)
 
     print(f'Question: {question}, Answer: {llm_answer}, Articles used: {"/n".join(urls)}"')
+    r.set(f'n_tokens_used-{session[SESSION_KEY]}', n_tokens_used)
     return dict(answer=llm_answer, urls_used=urls, n_tokens_used=n_tokens_used, id=row_id)
 
 
