@@ -1,9 +1,7 @@
 import json
 import os
-import secrets
 import urllib
 import uuid
-from collections import defaultdict
 
 import openai
 import psycopg2
@@ -18,24 +16,19 @@ load_dotenv()
 
 app = Flask(__name__, static_folder='static')
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-if app.config['SECRET_KEY']:
-    print('Secret was set!')
+app.config['SESSION_TYPE'] = 'redis'
+app.config['SESSION_REDIS'] = redis.from_url(os.environ['REDIS_URL'])
+Session(app)
 
 if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
     print('Using development config')
 else:
-    Session(app)
-    app.config['SESSION_TYPE'] = 'redis'
-    app.config['SESSION_REDIS'] = redis.from_url(os.environ['REDIS_URL'])
     app.config.update(
         SESSION_COOKIE_SECURE=True,
         REMEMBER_COOKIE_SECURE=True,
+        SESSION_USE_SIGNER=True,
     )
     print('Using production config')
-
-
-message_history = defaultdict(list)
-question_history = defaultdict(list)
 
 if 'DATABASE_URL' not in os.environ:
     raise Exception('DATABASE_URL environment variable not set')
@@ -65,7 +58,6 @@ SESSION_KEY = 'sessionId'
 
 @app.route('/feedback', methods=['POST'])
 def feedback():
-    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     session_id = session.get(SESSION_KEY)
     if not session_id:
         return 'No session exists', 400
@@ -95,9 +87,8 @@ def feedback():
     return dict(success=True, data=request.get_json())
 
 
-@app.route('/login')
-def index():
-    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+@app.route('/login', methods=['POST'])
+def login():
     print('Logging in')
     print(f'Session: {session.get(SESSION_KEY)}')
     session[SESSION_KEY] = session.get(SESSION_KEY, str(uuid.uuid4()))
@@ -106,7 +97,6 @@ def index():
 
 @app.route('/reset-session')
 def logout():
-    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     session[SESSION_KEY] = str(uuid.uuid4())
     print(f'Session reset: {session[SESSION_KEY]}')
     return 'Session reset'
@@ -114,7 +104,6 @@ def logout():
 
 @app.route('/answer')
 def answer():
-    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     session_id = session.get(SESSION_KEY)
     question = request.args.get('question')
     previous_messages = []
