@@ -7,8 +7,10 @@ from collections import defaultdict
 
 import openai
 import psycopg2
+import redis as redis
 from dotenv import load_dotenv
 from flask import Flask, request, session, send_from_directory
+from flask_session import Session
 
 from agent.agent import respond
 
@@ -19,6 +21,9 @@ app = Flask(__name__, static_folder='static')
 if 'FLASK_ENV' in os.environ and os.environ['FLASK_ENV'] == 'development':
     print('Using development config')
 else:
+    Session(app)
+    app.config['SESSION_TYPE'] = 'redis'
+    app.config['SESSION_REDIS'] = redis.from_url(os.environ['REDIS_URL'])
     app.config.update(
         SESSION_COOKIE_SECURE=True,
         REMEMBER_COOKIE_SECURE=True,
@@ -68,7 +73,7 @@ def feedback():
     row_id = request_data['messageId']
     select_query = '''
         SELECT true FROM session_history
-        WHERE id = %s AND session_id = %s AND is_good_feedback IS NULL
+        WHERE id = %s AND session_id = %s
     '''
     with conn.cursor() as cursor:
         cursor.execute(select_query, (row_id, session_id))

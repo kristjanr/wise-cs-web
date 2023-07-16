@@ -11,3 +11,5 @@ numpy
 python-dotenv
 psycopg2-binary
 sqlalchemy
+Flask-Session
+redis
