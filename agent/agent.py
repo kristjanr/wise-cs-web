@@ -51,7 +51,7 @@ def respond(question: str, previous_messages, previous_questions) -> (str, list,
     logging.info(f'Context generation time: {context_time} seconds')
     logging.info(f'LLM answer generation time: {llm_time} seconds')
 
-    return llm_answer, urls, new_messages, tokens_used
+    return llm_answer, urls, prompt_messages, new_messages, tokens_used
 
 
 def get_relevant_context_to_answer_questions(previous_questions, question):
@@ -81,7 +81,7 @@ tokenizer = tiktoken.encoding_for_model(MODEL)
 
 
 def fetch_llm_answer(new_messages, previous_messages):
-    prompt_messages = previous_messages
+    prompt_messages = previous_messages.copy()
     prompt_messages.extend(new_messages)
     print(f'First 200 chars of messages sent to LLM: {[json.dumps(m)[:200] for m in prompt_messages]}')
     chat = openai.ChatCompletion.create(
@@ -93,6 +93,11 @@ def fetch_llm_answer(new_messages, previous_messages):
 
 
 def remove_big_messages(before):
-    after = list(filter(lambda m: (m['role'] != 'system' or not m['content'].startswith('CONTEXT: \n')), before))
+    after = []
+    for message in before:
+        if message['role'] == 'system' and message['content'].startswith('CONTEXT:'):
+            continue
+        else:
+            after.append(message)
     print(f'Removed {len(before) - len(after)} big messages')
     return after

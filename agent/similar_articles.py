@@ -49,7 +49,7 @@ MODEL = "gpt-4"
 tokenizer = tiktoken.encoding_for_model(MODEL)
 
 
-def get_most_similar_articles_up_to_n_tokens(question: str, max_tokens=3000) -> dict[str, dict]:
+def get_most_similar_articles_up_to_n_tokens(question: str, max_tokens=2000) -> dict[str, dict]:
     articles = {
         article.url: dict(content=article.markdown, tokens=len(tokenizer.encode(article.markdown))) for
         similarity, article in get_similar_articles(question)}

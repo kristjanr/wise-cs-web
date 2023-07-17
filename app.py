@@ -122,7 +122,7 @@ def answer():
         previous_questions = get_previous_questions(session_id)
 
     try:
-        llm_answer, urls, new_messages, n_tokens_used = respond(question, previous_messages, previous_questions)
+        llm_answer, urls, previous_messages, new_messages, n_tokens_used = respond(question, previous_messages, previous_questions)
     except openai.error.InvalidRequestError as e:
         n_tokens_used = e.user_message.split('your messages resulted in ')[1].split(' tokens')[0]
         return dict(answer='Context window full. Please reset session!', urls_used=[], n_tokens_used=n_tokens_used)
